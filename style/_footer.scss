@@ -1,0 +1,30 @@
+.footer{
+    &-top{
+        background-color:#f9dd21;
+        line-height: 6rem;
+        .footer-top-all{
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-footer-top{
+            display: flex;
+            align-items: center;
+            &__icon{
+                width: 2.5rem;
+                color: #2b2606;
+            }
+            .contact-footer-top__icon--phone{
+                width: 1.5rem;
+                color: #2b2606;
+            }
+            &__text{
+                font-size: 2rem;
+                color: #336e27;
+            }
+            &__link{
+                font-size: 2rem;
+                color:#fd7118;
+            }
+        }
+    }
+}
