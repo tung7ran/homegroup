@@ -1,0 +1,84 @@
+.header{
+    width: 100%;
+    height: 8rem;
+    &-menu{
+        &-all{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 8rem;
+            &__image{
+                width: 25.8rem;
+                height: 5.7rem;
+            }
+            &__list{
+                display: flex;
+                &--item{
+                    padding: 0 1rem;
+                    .item-card{
+                        position: relative;
+                    }
+                    &-link{
+                        color: $color-black;
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                    .fa-chevron-down{
+                        font-size: 1.2rem;
+                    }
+                    .tab-sub{
+                        z-index: 999;
+                        display: none;
+                        position: absolute;
+                        width: 23rem;
+                        box-shadow: 0px 0px 10px 0px $color-header-boxshadow;
+                        top: 7rem;
+                        background-color: $color-white;
+                        &-list{
+                            height: 5.5rem;
+                            padding-left: 3rem;
+                            position: relative;
+                            &__link{
+                                color: $color-black;
+                                font-size: 1.6rem;
+                                text-transform: uppercase;
+                                font-weight: 600;
+                            }
+                            &__link:hover{
+                                color: $color-header-hover;
+                            }
+                            &__link::after{
+                                position: absolute;
+                                content: "";
+                                width: 1rem;
+                                height: 1rem;
+                                border: 1px solid #ccc;
+                                padding-top: 1rem;
+                                padding-bottom: 0.5rem;
+                                padding-right: 0.5rem;
+                                padding-left: 0.5rem;
+                                margin-bottom: 1rem;
+                                border-radius: 0.5rem 0rem 0.5rem 0rem;
+                                top: 3rem;
+                                background: $color-white;
+                                left: 1rem;
+                            }
+                            &__link:hover::after{
+                                background: $color-header-hover;
+                                border-color: $color-header-hover;
+                            }
+                        }
+                    }
+                }
+                .item-card:hover .tab-sub{
+                    display: block;
+                    color: $color-header-hover;
+                }
+                .none-right{
+                    padding-right: 0rem;
+                }
+            }
+        }
+    }
+}
