@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  
     $(".Modern-Slider").slick({
       autoplay: true,
       autoplaySpeed:3000,
@@ -20,6 +19,5 @@ $(document).ready(function() {
       autoplay: true,
       autoplaySpeed: 2000,
     });
-      
-    
-  })
+})
+
