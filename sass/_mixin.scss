@@ -1,0 +1,95 @@
+
+$res_mobile : "(min-width: 375px) and (max-width: 767px)";
+$res_tablet : "(min-width: 768px) and (max-width: 1023px)";
+$res_tablet-low: "(min-width: 532px) and (max-width: 633px)";
+$res_tablet-mobile:"(max-width:1023px)";
+$res_pclow : "(min-width: 1024px)";
+
+@mixin responsive_mobile() {
+  @media #{$res_mobile} {
+    @content;
+  }
+}
+@mixin responsive_tablet() {
+  @media #{$res_tablet} {
+    @content;
+  }
+}
+@mixin responsive_tablet-low() {
+  @media #{$res_tablet-low} {
+    @content;
+  }
+}
+@mixin responsive_tablet-mobile() {
+  @media #{$res_tablet-mobile} {
+    @content;
+  }
+}
+@mixin responsive_pclow() {
+  @media #{$res_pclow} {
+    @content;
+  }
+}
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+@font-face{
+  font-family: Roboto-Regular;
+  src: url('../fonts/Roboto-Regular.ttf');
+}
+@mixin buttonStyle {
+    font-size: 1.6rem;
+    padding: 1.5rem 5.2rem;
+    border: none;
+    outline: none;
+    color: #a1710f;
+    background-color: #ffd00f;
+    border-radius: 8rem;
+    text-transform: uppercase;
+  }
+  @mixin backgroundImage {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+  @mixin logoColumn {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 5rem;
+  }
+  @mixin buttonAfter {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 0;
+    width: 98%;
+    height: 90%;
+    border: 0.2rem dotted #fff;
+    border-bottom-left-radius: 8rem;
+    border-bottom-right-radius: 8rem;
+    border-top-left-radius: 8rem;
+    border-top-right-radius: 8rem;
+  }
+  @mixin formContact {
+    background-color: $background-form;
+    outline: none;
+    border-radius: 1rem;
+    border: 0.2rem solid $orange;
+    font-size: 2rem;
+    padding: 0 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  @mixin property {
+    width: 100%;
+    border: 1px solid #c6c6c6;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+   
