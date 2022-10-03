@@ -1676,7 +1676,7 @@ a:hover {
   font-weight: 600;
 }
 
-.furniture-banner {
+.product-banner {
   background-image: url(../images/furnitune_design/background-banner-1.png);
   background-size: cover;
   background-position: center;
@@ -1685,7 +1685,7 @@ a:hover {
   object-fit: cover;
   height: 22.8rem;
 }
-.furniture-banner-title {
+.product-banner-title {
   padding-top: 4.8rem;
   font-size: 4.5rem;
   color: #fff;
@@ -1693,7 +1693,7 @@ a:hover {
   text-transform: uppercase;
   min-height: 10rem;
 }
-.furniture-banner-describe {
+.product-banner-describe {
   text-align: center;
   font-size: 2.8rem;
   color: #fff;
@@ -1701,24 +1701,24 @@ a:hover {
   font-weight: 300;
 }
 
-.furniture-heading {
+.product-heading {
   text-align: center;
   margin-top: 2.8rem;
 }
-.furniture-heading-home {
+.product-heading-home {
   position: relative;
   line-height: 3rem;
 }
-.furniture-heading-home a {
+.product-heading-home a {
   font-size: 2rem;
   color: #000;
   font-weight: 300;
 }
-.furniture-heading-home span {
+.product-heading-home span {
   font-size: 2rem;
   font-weight: 600;
 }
-.furniture-heading-home::before {
+.product-heading-home::before {
   content: "";
   width: 10rem;
   height: 0.2rem;
@@ -1730,301 +1730,337 @@ a:hover {
   right: 0;
 }
 
-.furniture-care-heading {
+.product-construction {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.product-construction-title {
   text-align: center;
 }
-.furniture-care-heading__text1 {
+.product-construction-title__text1 {
   font-size: 3.6rem;
   text-transform: uppercase;
   font-weight: 600;
-  line-height: 10rem;
 }
-.furniture-care-heading__text2 {
+.product-construction-title__text2 {
   font-size: 3.6rem;
-  font-weight: 300;
-}
-.furniture-care-heading__text3 {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  font-size: 3.6rem;
-  font-weight: 300;
-}
-.furniture-care-hover__image {
-  position: relative;
-  display: block;
-  height: 30rem;
-  margin: 1.5rem 0;
-  overflow: hidden;
-}
-.furniture-care-hover__image img {
-  transition: all 2s;
-  width: 100%;
-  height: 100%;
-}
-.furniture-care-hover .furniture-care-hover__image:hover img {
-  transform: scale(1.5);
-}
-.furniture-care-hover__describe {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  text-align: center;
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.231372549);
-  margin: 0 1.5rem;
-}
-.furniture-care-hover__describe--text {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 0;
-  left: 0;
-  text-align: center;
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: #e9ce30;
-  background: rgba(0, 0, 0, 0.231372549);
-  padding: 2rem 0;
-}
-.furniture-care-hover__describe--text-name {
-  float: right;
-  padding-right: 3rem;
-}
-
-.furnitutre-refer {
-  margin-top: 6rem;
-}
-.furnitutre-refer-heading {
-  text-align: center;
-}
-.furnitutre-refer-heading__text1 {
-  font-size: 4.8rem;
   text-transform: uppercase;
   font-weight: 300;
-  letter-spacing: 0.1rem;
-  line-height: 8rem;
-}
-.furnitutre-refer-heading__text2 {
-  line-height: 6rem;
-  font-size: 4.2rem;
-  text-transform: uppercase;
+  margin-top: 1rem;
   margin-bottom: 6rem;
 }
-.furnitutre-refer .furnitune-refer-image {
-  background-image: url(../images/furnitune_design/background.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -o-object-fit: cover;
-  object-fit: cover;
-  height: 97rem;
-  position: relative;
-}
-.furnitutre-refer .furnitune-refer-info {
-  position: absolute;
-  width: 80rem;
-  background-color: #fff;
-  left: 36rem;
-  top: 10rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--text1 {
-  margin-top: 5rem;
+.product-construction-heading {
   text-align: center;
+}
+.product-construction-heading__text {
   font-size: 3.6rem;
   text-transform: uppercase;
-  font-weight: 300;
-  line-height: 8rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--text2 {
-  text-align: center;
-  font-size: 3.6rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  min-height: 8rem;
-  line-height: 4rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item1 {
-  display: grid;
-  padding: 0 1rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item1-input {
-  width: 100%;
-  font-size: 2.4rem;
-  padding-left: 1.5rem;
-  outline: none;
-}
-.furnitutre-refer .furnitune-refer-info__form--item1-span {
-  text-align: center;
-  color: #dc3232;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 2rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item2 {
-  display: flex;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item2-Specifically {
-  display: grid;
-  padding: 0 1rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item2-Specifically-label {
-  font-size: 2.4rem;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-}
-.furnitutre-refer .furnitune-refer-info__form--item2-Specifically-input {
-  width: 100%;
-  font-size: 2.4rem;
-  padding-left: 2.5rem;
-  outline: none;
-}
-.furnitutre-refer .furnitune-refer-info__form--item3 {
-  display: grid;
-  padding: 0 1rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item3-name {
-  width: 100%;
-  font-size: 2.4rem;
-  padding-left: 2.5rem;
-  outline: none;
-}
-.furnitutre-refer .furnitune-refer-info__form--item3-text {
-  text-align: center;
-  color: #dc3232;
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 2rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item4 {
-  display: grid;
-  padding: 0 1rem;
-  margin-top: 3rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item4-phone {
-  width: 100%;
-  font-size: 2.4rem;
-  padding-left: 2.5rem;
-  outline: none;
-  margin-bottom: 2rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item4-email {
-  width: 100%;
-  font-size: 2.4rem;
-  padding-left: 2.5rem;
-  outline: none;
-  margin-bottom: 2rem;
-}
-.furnitutre-refer .furnitune-refer-info__form--item5 {
   text-align: center;
 }
-.furnitutre-refer .furnitune-refer-info__form--item5-submit {
-  background-color: #000;
-  color: #f1d52b;
-  width: 21rem;
-  border: none;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
+.product-construction-list__item {
   font-size: 2rem;
+  margin-top: 1.5rem;
+  line-height: 3rem;
+  list-style-image: url(../images/icon/furnitune_product/icon-list-address.png);
+  font-weight: 500;
 }
-.furnitutre-refer .furnitune-refer-info__form--item6 {
-  margin-top: 4rem;
-  margin-bottom: 8rem;
-  text-align: center;
-}
-.furnitutre-refer .furnitune-refer-info__form--item6-text {
-  border: 2px solid #f1d52b;
-  font-size: 1.4rem;
-  padding: 1rem 16rem;
-  font-weight: 600;
-}
-
-.furniture-procedure {
-  margin-top: 6rem;
-  position: relative;
-}
-.furniture-procedure-heading {
-  margin-bottom: 4.5rem;
-  text-align: center;
-}
-.furniture-procedure-heading__text1 {
-  font-size: 3.6rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-.furniture-procedure-heading__text2 {
-  font-size: 3.6rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  line-height: 6rem;
-}
-.furniture-procedure-image {
-  position: relative;
-  margin-bottom: 10rem;
-  padding-bottom: 8rem;
-}
-.furniture-procedure-circle {
-  width: 20%;
+.product-construction-content__tick {
+  display: flex;
+  align-items: flex-start;
+  width: 7.3rem;
   height: auto;
-  position: absolute;
-  right: 0;
-  top: 21rem;
+  margin-bottom: 2rem;
 }
-.furniture-procedure-image::after {
-  content: "";
-  width: 10rem;
-  height: 0.2rem;
-  position: absolute;
-  background-color: #000;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  bottom: 0;
+.product-construction-content__tick--text {
+  display: flex;
+  flex-direction: column;
 }
-
-.furniture-parameter .furniture-parameter-image {
-  background-image: url(../images/furnitune_design/background-1.png);
+.product-construction-content__tick--text-title {
+  font-size: 2rem;
+  width: 30rem;
+  padding-left: 1rem;
+  line-height: 3rem;
+}
+.product-construction-content__tick--text-sub {
+  font-size: 2rem;
+  line-height: 3rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.product-construction-circle {
+  background-image: url(../images/furnitune_product/background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 22.8rem;
+  height: 76rem;
 }
-.furniture-parameter .counter-container {
-  margin-top: 9rem;
+.product-construction .product-construction-all {
+  padding-top: 6rem;
 }
-.furniture-parameter .counter-container-all {
+
+.product-workshop-all__list {
+  justify-content: center;
   display: flex;
+  cursor: pointer;
+  margin-bottom: 4rem;
 }
-.furniture-parameter .counter-container .counter {
-  font-size: 7.2rem;
-  color: #ffc410;
-  min-height: 5rem;
+.product-workshop-all__list--item {
+  font-size: 2.4rem;
+  line-height: 1.6rem;
 }
-.furniture-parameter .counter-container .plus {
-  font-size: 7.2rem;
-  color: #ffc410;
-}
-.furniture-parameter .counter-container .content {
+.product-workshop-all__list .border-nav {
+  padding: 0 2rem;
   font-size: 2.2rem;
-  margin-top: 3rem;
-  color: #858585;
 }
-.furniture-parameter-button {
-  margin-top: 10rem;
-  margin-bottom: 10rem;
+.product-workshop-slider__image {
+  padding: 0 1rem;
+}
+
+.product-price {
+  position: relative;
+  margin-top: 5.2rem;
+  margin-bottom: 11rem;
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+.product-price-image__top {
+  width: 6.2rem;
+  position: absolute;
+  top: -1.2rem;
+  left: 15rem;
+}
+.product-price-image__bottom {
+  width: 6.2rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 16rem;
+}
+.product-price-heading {
+  text-align: center;
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+  font-weight: 600;
+}
+.product-price-sub {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+.product-price-describe {
   text-align: center;
 }
-.furniture-parameter-button__more {
+.product-price-describe__text {
   font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  line-height: 3rem;
+}
+.product-price .gold-container {
+  margin: 5rem auto;
+  padding-top: 0rem;
+  position: relative;
+  width: 28rem;
+}
+.product-price .gold-container .gold-btn {
+  display: block;
+  margin: 0 auto;
   color: #000;
-  padding: 1rem 4rem;
-  border: 1px solid #000;
+  width: 28rem;
+  line-height: 5rem;
+  background: #f1d52b;
+  font-size: 2rem;
+  border: 0;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+}
+.product-price .gold-container .gold-content,
+.product-price .gold-container .gold-backdrop {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+}
+.product-price .gold-container .gold-close {
+  color: #8f8220;
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  padding-top: 0.3rem;
+  font-size: 2.8rem;
+  width: 2.5;
+  height: 2.5;
+  font-weight: 6000;
+  text-align: center;
+  cursor: pointer;
+}
+.product-price .gold-container .gold-close:hover {
+  color: #333;
+}
+.product-price .gold-container #gold-toggle {
+  display: none;
+}
+.product-price .gold-container #gold-toggle.active ~ .gold-backdrop, .product-price .gold-container #gold-toggle:checked ~ .gold-backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s ease-in;
+}
+.product-price .gold-container #gold-toggle.active ~ .gold-content, .product-price .gold-container #gold-toggle:checked ~ .gold-content {
+  opacity: 1;
+  background-color: #f8e037;
+  max-width: 60rem;
+  width: 60rem;
+  height: 65rem;
+  padding: 10px 30px;
+  position: fixed;
+  left: calc(50% - 200px);
+  top: 12%;
+  border-radius: 4px;
+  z-index: 999;
+  pointer-events: auto;
+  cursor: auto;
+  visibility: visible;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 400px) {
+  .product-price .gold-container #gold-toggle.active ~ .gold-content, .product-price .gold-container #gold-toggle:checked ~ .gold-content {
+    left: 0;
+  }
+}
+.product-price .gold-title-text {
+  font-size: 2.4rem;
   font-weight: 600;
+  margin: 4rem auto;
+}
+.product-price .gold-form {
+  display: flex;
+  flex-direction: column;
+}
+.product-price .gold-form input {
+  width: 100%;
+  height: 5rem;
+  padding-left: 4rem;
+  border: 0;
+  color: #000;
+  font-size: 2.4rem;
+  margin: 1rem 0;
+  outline: none;
+  line-height: 5rem;
+}
+.product-price .gold-form .gold-seclect {
+  width: 100%;
+  height: 5rem;
+  padding-left: 4rem;
+  border: 0;
+  color: #000;
+  font-size: 2.4rem;
+  margin: 1rem 0;
+  outline: none;
+  line-height: 5rem;
+}
+.product-price .gold-form .gold-seclect-label {
+  text-align: left;
+  font-size: 2rem;
+  padding-left: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+.product-price .gold-form .gold-form-btn {
+  text-align: center;
+  width: 22rem;
+  background: #000;
+  line-height: 5rem;
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 0;
+  margin: 5rem auto;
+  cursor: pointer;
+}
+
+.product-gift .product-gift-image {
+  background-image: url(../images/furnitune_product/background\ \(1\).png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 50rem;
+}
+.product-gift .product-gift-image__box {
+  display: flex;
+}
+.product-gift .product-gift-image__box--gift {
+  width: 11rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.product-gift .product-gift-image__box--title {
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+.product-gift .product-gift-image__box--title-text1 {
+  font-size: 6.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #fae037;
+  line-height: 7rem;
+}
+.product-gift .product-gift-image__box--title-text2 {
+  font-size: 6.2rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fae037;
+  line-height: 7rem;
+}
+.product-gift .product-gift-image__list--item {
+  font-size: 2.2rem;
+  color: #fff;
+  margin-top: 4rem;
+  line-height: 2rem;
+  position: relative;
+}
+.product-gift .product-gift-image__list--item::after {
+  position: absolute;
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #fff;
+  left: -2rem;
+  top: 0.6rem;
+}
+
+.product-procedure {
+  margin-top: 10rem;
+}
+.product-procedure-title {
+  text-align: center;
+}
+.product-procedure-title__text1 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.product-procedure-title__text2 {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+.product-procedure-image {
+  margin-top: 10rem;
 }/*# sourceMappingURL=main.css.map */
