@@ -1190,7 +1190,7 @@ a:hover {
   height: 65rem;
   padding: 10px 30px;
   position: fixed;
-  left: calc(50% - 200px);
+  left: 36%;
   top: 12%;
   border-radius: 4px;
   z-index: 999;
@@ -1800,22 +1800,48 @@ a:hover {
   padding-top: 6rem;
 }
 
-.product-workshop-all__list {
-  justify-content: center;
+.product-workshop .product-workshop-tab .product-workshop-tab__list {
   display: flex;
-  cursor: pointer;
-  margin-bottom: 4rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
 }
-.product-workshop-all__list--item {
-  font-size: 2.4rem;
-  line-height: 1.6rem;
-}
-.product-workshop-all__list .border-nav {
-  padding: 0 2rem;
+.product-workshop .product-workshop-tab .product-workshop-tab__list li {
   font-size: 2.2rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
 }
-.product-workshop-slider__image {
-  padding: 0 1rem;
+.product-workshop .product-workshop-tab .product-workshop-tab__list li.active {
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: 600;
+  position: relative;
+}
+.product-workshop .product-workshop-tab .product-workshop-tab__list li.active::after {
+  content: "";
+  width: 10rem;
+  height: 0.3rem;
+  background-color: #000;
+  position: absolute;
+  left: 2rem;
+  top: -1rem;
+}
+.product-workshop .product-workshop-tab .product-workshop-tab__list .border-nav {
+  border-right: 2px solid #000;
+}
+.product-workshop .product-workshop-tab .product-workshop-tab__body {
+  width: 100%;
+}
+.product-workshop .product-workshop-tab .product-workshop-tab__body .tab-data {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 18px;
+  line-height: 30px;
+}
+.product-workshop .product-workshop-tab .product-workshop-tab__body .tab-data:not(.active) {
+  display: none;
+}
+.product-workshop .product-workshop-tab .product-workshop-tab__body .product-workshop-tab__image {
+  padding-left: 1rem;
 }
 
 .product-price {
@@ -1927,7 +1953,7 @@ a:hover {
   height: 65rem;
   padding: 10px 30px;
   position: fixed;
-  left: calc(50% - 200px);
+  left: 34%;
   top: 12%;
   border-radius: 4px;
   z-index: 999;
@@ -2063,4 +2089,71 @@ a:hover {
 }
 .product-procedure-image {
   margin-top: 10rem;
+}
+
+.product-view {
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+.product-view-title {
+  display: flex;
+  justify-content: space-between;
+}
+.product-view-title__text--one {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.product-view-title__text--two {
+  font-size: 3.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+.product-view-title__project {
+  font-size: 7.8rem;
+  color: #d2d2d2;
+}
+.product-view-box__image {
+  height: 24rem;
+  width: 100%;
+  display: block;
+  position: relative;
+  margin: 1.5rem 0;
+}
+.product-view-box__caption {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7411764706);
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.product-view-box__caption--text {
+  font-size: 2rem;
+  color: #e2c81f;
+  line-height: 2rem;
+  margin-top: 10rem;
+}
+.product-view .product-view-box:hover .product-view-box__caption {
+  display: block;
+  cursor: pointer;
+}
+.product-view-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.product-view-more a {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.5rem 2rem;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #000;
 }/*# sourceMappingURL=main.css.map */

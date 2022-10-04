@@ -54,18 +54,15 @@ $(document).ready(function() {
       ]
     });
 
-    $('.product-workshop-slider').slick({
+    $('.tab-data').slick({
       slidesToShow: 4,
       slidesToScroll: 2,
       // autoplay: true,
       autoplaySpeed: 2000,
     });
-
-    
 })
 
 const counters = document.querySelectorAll(".counter");
-
 counters.forEach((counter) => {
   counter.innerText = "0";
   const updateCounter = () => {
@@ -80,31 +77,16 @@ counters.forEach((counter) => {
   updateCounter();
 });
 
-"use strict";
-var initTabs = (function () {
-  var contentItems = document.querySelectorAll('.product-workshop-slider');
+var tab = $('.product-workshop-tab__list li');
+var tabData = $('.product-workshop-tab__body .tab-data');
 
-  var tabGroup0    = document.getElementById("tab-group-0");
-  var tabsItems0   = document.querySelectorAll("#tab-group-0 > li");
+ tab.on('click', function(){
+   tab.removeClass('active');
+   $(this).addClass('active');
 
-  _setTabGroupClick(tabGroup0, tabsItems0, 0);
+   let thisId = $(this).attr('id'); 
+   let thisTabData = $('.product-workshop-tab__body').find(`#data-${thisId}`);
 
-  function _setTabGroupClick (tabGroup, tabsItems, tabIndex) {
-    var tabSlected = tabsItems[tabIndex];
-
-    tabGroup.addEventListener('click', function (e) {
-      if (e.target.dataset.tab && (tabSlected.dataset.tab !== e.target.dataset.tab)) {
-        var currentTabIndex = parseInt(e.target.dataset.tab);
-
-        var oldTabIndex = parseInt(tabSlected.dataset.tab);
-
-        tabSlected.classList.remove('selected');
-        tabSlected = tabsItems[currentTabIndex];
-        tabSlected.classList.add('selected');
-
-        contentItems[oldTabIndex].classList.remove('content--show');
-        contentItems[currentTabIndex].classList.add('content--show');
-      }
-    });
-  }
-})();
+   tabData.removeClass('active');
+   thisTabData.addClass('active');      
+ })

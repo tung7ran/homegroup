@@ -123,31 +123,51 @@
         padding-top:6rem;
     }
 }
-
 .product-workshop{
-    &-all{
-        &__list{
-            justify-content: center;
+    .product-workshop-tab{
+        .product-workshop-tab__list{
             display: flex;
-            cursor: pointer;
-            margin-bottom: 4rem;
-            &--item{
-                font-size: 2.4rem;
-                line-height: 1.6rem;
-            }
-            .border-nav{
-                padding: 0 2rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+           li {
+            font-size: 2.2rem;
+              padding: .75rem 1.5rem;
+              cursor: pointer;
+              &.active {
+                color: $color-black;
                 font-size: 2.2rem;
-            }
+                font-weight: 600;
+                position: relative;
+              }
+              &.active::after{
+                content: "";
+                width: 10rem;
+                height: 0.3rem;
+                background-color: #000;
+                position: absolute;
+                left: 2rem;
+                top: -1rem;
+              }
+           }
+           .border-nav{
+            border-right: 2px solid $color-black;
+           }
         }
-    }
-    &-slider{
-        &__image{
-            padding: 0 1rem;
+        .product-workshop-tab__body {
+           width: 100%;
+           .tab-data {
+              width: 100%;
+              padding: 1.5rem;
+              font-size: 18px;
+              line-height: 30px;
+              &:not(.active) { display: none; }
+           }
+           .product-workshop-tab__image{
+            padding-left: 1rem;
+           }
         }
-    }
+     }
 }
-
 .product-price{
     position: relative;
     margin-top: 5.2rem;
@@ -254,7 +274,7 @@
             height: 65rem;
             padding: 10px 30px;
             position: fixed;
-            left: calc(50% - 200px);
+            left: calc(50% - 16%);
             top: 12%;
             border-radius: 4px;
             z-index: 999;
@@ -319,7 +339,6 @@
         }
       }
 }
-
 .product-gift{
     .product-gift-image{
     background-image: url(../images/furnitune_product/background\ \(1\).png);
@@ -375,7 +394,6 @@
         }
     }
 }
-
 .product-procedure{
     margin-top: 10rem;
     &-title{
@@ -396,3 +414,75 @@
         margin-top:10rem;
     }
 }
+
+.product-view{
+    padding: 0 1rem;
+    margin-top: 2rem;
+    &-title{
+      display: flex;
+      justify-content: space-between;
+      &__text{
+        &--one{
+          font-size: 3.6rem;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        &--two{
+          font-size: 3.6rem;
+          font-weight: 300; 
+          text-transform: uppercase;
+          line-height: 5rem;
+        }
+      }
+      &__project{
+        font-size: 7.8rem;
+        color: #d2d2d2;
+      }
+    }
+    &-box{
+        &__image{
+            height: 24rem;
+            width: 100%;
+            display: block;
+            position: relative;
+            margin: 1.5rem 0;
+        }
+        &__caption{
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background:$color-house-hover;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            &--text{
+                font-size: 2rem;
+                color: $color-house-title;
+                line-height: 2rem;
+                margin-top: 10rem;
+            }
+        }
+    }
+    .product-view-box:hover .product-view-box__caption{
+        display: block;
+        cursor: pointer;
+    }
+    &-more{
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+      a{
+        color: $color-black;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1.5rem 2rem;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid $color-black;
+      }
+    }
+}
+  
