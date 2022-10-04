@@ -815,7 +815,7 @@ a:hover {
   font-size: 3rem;
   text-transform: uppercase;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.231372549);
+  background-color: rgba(0, 0, 0, 0.5803921569);
   margin: 0 1.5rem;
 }
 .service-content-describe__text .border-top-custom {
@@ -836,7 +836,7 @@ a:hover {
   font-size: 3rem;
   text-transform: uppercase;
   color: #fff;
-  background: rgba(0, 0, 0, 0.231372549);
+  background: rgba(0, 0, 0, 0.5803921569);
   padding: 2rem 0;
 }
 .service-content-hover {
@@ -1018,7 +1018,7 @@ a:hover {
   font-size: 30px;
   text-transform: uppercase;
   color: #fff;
-  background: rgba(0, 0, 0, 0.231372549);
+  background: rgba(0, 0, 0, 0.5803921569);
   margin: 0 1.5rem;
 }
 .house-content-describe__text .border-top-custom {
@@ -1420,7 +1420,7 @@ a:hover {
   font-size: 3rem;
   text-transform: uppercase;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.231372549);
+  background-color: rgba(0, 0, 0, 0.5803921569);
   margin: 0 1.5rem;
 }
 .furniture-care-hover__describe--text {
@@ -1432,7 +1432,7 @@ a:hover {
   font-size: 3rem;
   text-transform: uppercase;
   color: #e9ce30;
-  background: rgba(0, 0, 0, 0.231372549);
+  background: rgba(0, 0, 0, 0.5803921569);
   padding: 2rem 0;
 }
 .furniture-care-hover__describe--text-name {
@@ -2149,6 +2149,144 @@ a:hover {
   margin-top: 4rem;
 }
 .product-view-more a {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.5rem 2rem;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.project-banner {
+  background-image: url(../images/furnitune_design/background-banner-1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 22.8rem;
+}
+.project-banner-title {
+  padding-top: 4.8rem;
+  font-size: 4.5rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 10rem;
+}
+.project-banner-describe {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+  line-height: 4rem;
+  font-weight: 300;
+}
+
+.project-heading {
+  text-align: center;
+  margin-top: 2.8rem;
+}
+.project-heading-home {
+  position: relative;
+  line-height: 3rem;
+}
+.project-heading-home a {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 300;
+}
+.project-heading-home span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.project-heading-home::before {
+  content: "";
+  width: 10rem;
+  height: 0.2rem;
+  background-color: #d9d9d9;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.project-implementation {
+  padding: 0 1rem;
+  margin-top: 4.6rem;
+}
+.project-implementation-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-implementation-all__heading--text1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 5rem;
+}
+.project-implementation-all__heading--text2 {
+  margin-top: 1rem;
+  font-size: 3.6rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 3rem;
+}
+.project-implementation-all__option {
+  font-size: 2.4rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+.project-implementation-hover__image {
+  position: relative;
+  display: block;
+  height: 30rem;
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+.project-implementation-hover__image img {
+  transition: all 2s;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project-implementation-hover .project-implementation-hover__image:hover img {
+  transform: scale(1.5);
+}
+.project-implementation-hover__describe {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5803921569);
+  margin: 0 1.5rem;
+}
+.project-implementation-hover__describe--text {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5803921569);
+  padding: 2rem 0;
+}
+.project-implementation-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.project-implementation-more a {
   color: #000;
   font-size: 2rem;
   font-weight: 500;
