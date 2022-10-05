@@ -1,5 +1,18 @@
 $(document).ready(function() {
     $(".Modern-Slider").slick({
+      autoplay: true,
+      autoplaySpeed:4000,
+      speed:700,
+      mobileFirst: true,
+      slidesToShow:1,
+      slidesToScroll:1,
+      pauseOnHover:false,
+      respondTo:'min',
+      cssEase:'linear',
+ 
+    })
+
+    $(".info-introduce-wrap__right").slick({
       // autoplay: true,
       autoplaySpeed:3000,
       speed:700,
@@ -18,6 +31,30 @@ $(document).ready(function() {
       slidesToScroll: 3,
       autoplay: true,
       autoplaySpeed: 2000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 
     $('.believe-content-feedback').slick({
@@ -34,7 +71,6 @@ $(document).ready(function() {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true
           }
         },
         {
@@ -60,6 +96,22 @@ $(document).ready(function() {
       // autoplay: true,
       autoplaySpeed: 2000,
     });
+    
+  var mybutton = $("#myBtn");
+  var offSetTop = 100;
+  $(window).scroll(function() {
+      if ($(this).scrollTop() > offSetTop)  {
+        mybutton.css("display","block");
+    } else {
+        mybutton.css("display","none");
+    }
+  });
+  mybutton.click(function() {
+    $(window).scrollTop({
+      top: 0,
+      behavior: "smooth",
+    })
+  })
 })
 
 const counters = document.querySelectorAll(".counter");
