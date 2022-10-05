@@ -1,0 +1,234 @@
+@include responsive_mobile{
+    .home-content{
+        margin-top: 2rem;
+        margin-bottom:4rem;
+        padding: 0rem 0rem;
+        &-image__top{
+            display: none;
+        }
+        &-image__bottom{
+            display: none;
+        }
+        &-heading{
+            text-align: center;
+        }
+        &-sub{
+            text-align: center;
+        }
+    }
+    .service-content{
+        &-heading__title{
+            font-size: 2.6rem;
+        }
+        &-describe__text--name{
+            font-size: 2.6rem;
+        }
+        &-hover{
+            padding: 5rem 2rem;
+        }
+        &-hover__title{
+            font-size: 2.6rem;
+            text-align: center;
+        }
+    }
+
+    .design-content{
+        &-title__text{
+            font-size: 2.6rem;
+        }
+        &-sub__text{
+            font-size: 2.6rem;
+            line-height: 4rem;
+        }
+        &-describe__text{
+            line-height: 2.6rem;
+        }
+        &-logo{
+            display: none;
+        }
+        &-slider{
+            padding-left: 0%;
+        }
+    }
+
+    .house-content{
+        height: 100%;
+        margin-top: 10rem;
+        &-title{
+            display: flex;
+            justify-content: center;
+            &__project{
+                display: none;
+            }
+            &__text--one{
+                font-size: 2.6rem;
+            }
+            &__text--two{
+                font-size: 2.6rem;
+            }
+        }
+        &-rise{
+            position: unset !important;
+        }
+        &-title__text{
+            padding: 2rem 0;
+            text-align: center;
+        }
+        &-hover__more{
+            padding-bottom: 3rem;
+        }
+    }
+    .advise-content{
+        &-right{
+            padding: 0rem 0rem;
+            &__amount--number{
+                font-size: 7rem;
+            }
+            &__title--text{
+                font-size: 3rem;
+            }
+            &__describe--text{
+                font-size: 2.2rem;
+            }
+        }
+    }
+    .believe-content {
+        &-heading{
+            &__text{
+                font-size: 2.6rem;
+            }
+        }
+        &-describe{
+            &__text{
+                font-size: 2.6rem;
+            }
+        }
+    }
+    .question-content{
+        padding: 0 3rem;
+        &-heading__title{
+            font-size: 2.6rem;
+        }
+        &-list__item--link a{
+            line-height: 3rem;
+        }
+        &-list__item--link::before{
+            left: 1rem;
+            margin-top: 1.2rem;
+        }
+    }
+    .modal-form .modal-seclect-label{
+        line-height: 2.4rem;
+    }
+
+    .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content{
+        max-width: 100%;
+        width: 93%;
+    }
+}
+
+@include responsive_tablet{
+    .design-content{
+        &-title__text{
+            font-size: 2.6rem;
+        }
+        &-sub__text{
+            font-size: 2.6rem;
+            line-height: 4rem;
+        }
+        &-describe__text{
+            line-height: 2.6rem;
+        }
+        &-logo{
+            display: none;
+        }
+        &-slider{
+            padding-left: 0%;
+        }
+    }
+
+    .service-content{
+        &-heading__title{
+            font-size: 2.6rem;
+        }
+        &-describe__text--name{
+            font-size: 2.6rem;
+        }
+        &-hover{
+            padding: 5rem 2rem;
+        }
+        &-hover__title{
+            font-size: 2.6rem;
+            text-align: center;
+        }
+    }
+
+    .home-content{
+        margin-top: 2rem;
+        margin-bottom:4rem;
+        padding: 0rem 0rem;
+        &-image__top{
+            display: none;
+        }
+        &-image__bottom{
+            display: none;
+        }
+        &-heading{
+            text-align: center;
+        }
+        &-sub{
+            text-align: center;
+        }
+    }
+
+    .house-content{
+        height: 100%;
+        margin-top: 10rem;
+        &-title{
+            display: flex;
+            justify-content: center;
+            &__project{
+                display: none;
+            }
+            &__text--one{
+                font-size: 2.6rem;
+            }
+            &__text--two{
+                font-size: 2.6rem;
+            }
+        }
+        &-rise{
+            position: unset !important;
+        }
+        &-title__text{
+            padding: 2rem 0;
+            text-align: center;
+        }
+        &-hover__more{
+            padding-bottom: 3rem;
+        }
+    }
+
+    .modal-form .modal-seclect-label{
+        line-height: 2rem;
+    }
+
+    .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content{
+        max-width: 100%;
+        width: 90%;
+    }
+
+    .question-content{
+        padding: 0 3rem;
+        &-heading__title{
+            font-size: 2.6rem;
+        }
+        &-list__item--link a{
+            line-height: 3rem;
+        }
+        &-list__item--link::before{
+            left: 1rem;
+            margin-top: 1.2rem;
+        }
+    }
+}
