@@ -233,12 +233,13 @@ a:hover {
 .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content {
   opacity: 1;
   background-color: #f8e037;
-  max-width: 60rem;
-  width: 60rem;
+  max-width: 100%;
+  width: 32%;
   height: 65rem;
   padding: 10px 30px;
   position: fixed;
-  left: 36%;
+  left: 50%;
+  transform: translateX(-50%);
   top: 12%;
   border-radius: 4px;
   z-index: 999;
@@ -246,11 +247,6 @@ a:hover {
   cursor: auto;
   visibility: visible;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-}
-@media (max-width: 400px) {
-  .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content {
-    left: 0;
-  }
 }
 
 .gold-title-text {
@@ -1647,6 +1643,7 @@ navbar input[type=checkbox],
 }
 .furnitutre-refer .furnitune-refer-info {
   position: absolute;
+  max-width: 100%;
   width: 80rem;
   background-color: #fff;
   left: 36rem;
@@ -3253,5 +3250,95 @@ navbar input[type=checkbox],
   .question-content-list__item--link::before {
     left: 1rem;
     margin-top: 1.2rem;
+  }
+}
+@media (min-width: 375px) and (max-width: 767px) {
+  .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content {
+    max-width: 100%;
+    width: 93%;
+  }
+  .gold-form .gold-seclect-label {
+    line-height: 2.4rem;
+  }
+  .furniture-banner-title {
+    padding-top: 2rem;
+    font-size: 2.6rem;
+    line-height: 4rem;
+  }
+  .furniture-care-heading {
+    margin-top: 2rem;
+  }
+  .furniture-care-heading__text1 {
+    line-height: 4rem;
+    font-size: 2.6rem;
+  }
+  .furniture-care-heading__text2 {
+    font-size: 2.6rem;
+  }
+  .furniture-care-heading__text3 {
+    font-size: 2.6rem;
+  }
+  .furnitutre-refer-heading {
+    display: none;
+  }
+  .furnitutre-refer .furnitune-refer-info__form--text1,
+.furnitutre-refer .furnitune-refer-info__form--text2 {
+    font-size: 2.6rem;
+  }
+  .furnitutre-refer .furnitune-refer-info__form--item1-input {
+    font-size: 2rem;
+    padding: 0.2rem 2rem;
+  }
+  .furnitutre-refer .furnitune-refer-info__form--item2 {
+    display: block;
+  }
+  .furnitutre-refer .furnitune-refer-info__form--item2-Specifically {
+    margin: 2rem 0;
+  }
+  .furnitune-refer-info__form--item1-span {
+    display: none;
+  }
+  .furnitune-refer-info__form--item3-text {
+    display: none;
+  }
+  .furnitune-refer-info__form--item6-text {
+    display: none;
+  }
+  .furnitutre-refer .furnitune-refer-info {
+    left: 0rem;
+  }
+  .furniture-procedure-heading__text1 {
+    font-size: 2.6rem;
+  }
+  .furniture-procedure-heading__text2 {
+    font-size: 2.6rem;
+  }
+  .furniture-procedure-image {
+    padding-bottom: 2rem;
+    margin-bottom: 6rem;
+  }
+  .furniture-parameter .furniture-parameter-image {
+    height: 78rem;
+  }
+  .furniture-parameter .counter-container-all {
+    display: flex;
+    justify-content: center;
+  }
+  .furniture-parameter .counter-container .content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .furnitutre-refer .furnitune-refer-info {
+    left: 0rem;
+  }
+  .furniture-parameter .counter-container .counter {
+    font-size: 5rem;
+  }
+  .furniture-parameter .counter-container .content {
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */

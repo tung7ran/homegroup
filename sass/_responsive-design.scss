@@ -1,0 +1,99 @@
+@include responsive_mobile{
+    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
+        max-width: 100%;
+        width: 93%;
+    }
+    .gold-form .gold-seclect-label{
+        line-height: 2.4rem;
+    }
+    .furniture-banner{
+        &-title{
+            padding-top: 2rem;
+            font-size: 2.6rem;
+            line-height: 4rem;
+        }
+    }
+    .furniture-care{
+        &-heading{
+            margin-top: 2rem;
+            &__text1{
+                line-height: 4rem;
+                font-size: 2.6rem;
+            }
+            &__text2{
+                font-size: 2.6rem;
+            }
+            &__text3{
+                font-size: 2.6rem;
+            }
+        }
+    }
+    .furnitutre-refer{
+        &-heading{
+            display: none;
+        }
+    }
+
+    .furnitutre-refer .furnitune-refer-info__form--text1,
+    .furnitutre-refer .furnitune-refer-info__form--text2{
+        font-size: 2.6rem;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--item1-input{
+        font-size: 2rem;
+        padding: 0.2rem 2rem;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--item2{
+        display: block;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--item2-Specifically{
+        margin: 2rem 0;
+    }
+    .furnitune-refer-info__form--item1-span{
+        display: none;
+    }
+    .furnitune-refer-info__form--item3-text{
+        display: none;
+    }
+    .furnitune-refer-info__form--item6-text{
+        display: none;
+    }
+    .furnitutre-refer .furnitune-refer-info{
+        left: 0rem;
+    }
+    .furniture-procedure-heading__text1{
+        font-size: 2.6rem;
+    }
+    .furniture-procedure-heading__text2{
+        font-size: 2.6rem;
+    }
+    .furniture-procedure-image{
+        padding-bottom: 2rem;
+        margin-bottom: 6rem;
+    }
+    .furniture-parameter .furniture-parameter-image{
+        height: 78rem;
+    }
+    .furniture-parameter .counter-container-all{
+        display: flex;
+        justify-content: center;
+    }
+    .furniture-parameter .counter-container .content{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+@include responsive_tablet{
+    .furnitutre-refer .furnitune-refer-info{
+        left: 0rem;
+    }
+    .furniture-parameter .counter-container .counter{
+        font-size: 5rem;
+    }
+    .furniture-parameter .counter-container .content{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    
+}
