@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(".Modern-Slider").slick({
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed:4000,
       speed:700,
       mobileFirst: true,
@@ -29,7 +29,7 @@ $(document).ready(function() {
     $('.design-content-slider').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
-      autoplay: true,
+      // autoplay: true,
       autoplaySpeed: 2000,
       responsive: [
         {
@@ -112,6 +112,29 @@ $(document).ready(function() {
       behavior: "smooth",
     })
   })
+
+  
+  $(".show").on("click", function(){
+    $(".mask").addClass("active");
+  });
+
+  // Function for close the Modal
+
+  function closeModal(){
+    $(".mask").removeClass("active");
+  }
+
+  // Call the closeModal function on the clicks/keyboard
+
+  $(".close, .mask").on("click", function(){
+    closeModal();
+  });
+
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+      closeModal();
+    }
+  });
 })
 
 const counters = document.querySelectorAll(".counter");
@@ -142,3 +165,6 @@ var tabData = $('.product-workshop-tab__body .tab-data');
    tabData.removeClass('active');
    thisTabData.addClass('active');      
  })
+
+
+ 
