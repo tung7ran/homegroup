@@ -232,3 +232,9 @@
         }
     }
 }
+
+@include responsive_pclow{
+    .question-content-list{
+        padding: 0 2rem;
+    }
+}
