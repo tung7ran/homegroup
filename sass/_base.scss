@@ -220,20 +220,20 @@ a:hover {
     &:checked ~ .gold-content {
       opacity: 1;
       background-color: #f8e037;
-      max-width: 60rem;
-      width: 60rem;
+      max-width: 100%;
+      width: 32%;
       height: 65rem;
       padding: 10px 30px;
       position: fixed;
-      left: calc(50% - 14%);
+      left: 50%;
+      transform: translateX(-50%);
       top: 12%;
       border-radius: 4px;
       z-index: 999;
       pointer-events: auto;
       cursor: auto;
       visibility: visible;      
-      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);  
-      @media (max-width: 400px) { left: 0; }                   
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);                  
     }  
   }
 }

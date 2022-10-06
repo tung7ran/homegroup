@@ -1,0 +1,89 @@
+@include responsive_mobile{
+    .info-banner{
+        &-title{
+            padding-top:2rem;
+            font-size: 2.6rem;
+            line-height: 4rem;
+            min-height: 6rem;
+        }
+    }
+    .info-introduce-title__text{
+        font-size: 2.6rem;
+    }
+    .info-introduce-videos{
+        margin-bottom: 2rem;
+    }
+    .info-introduce-wrap{
+        display: block;
+    }
+    .info-introduce-wrap__left{
+        width: 100%;
+    }
+    .info-introduce-wrap__left--content-quote-top{
+        display: none;
+    }
+    .info-introduce-wrap__left--content-quote-bottom{
+        display: none;
+    }
+    .info-introduce-wrap__left--content{
+        margin: 0rem 0rem;
+    }
+    .info-introduce-wrap__right {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .info-introduce-wrap__left--content-text{
+        padding: 0 1rem;
+    }
+    .info-introduce .info-introduce-wrap__right .NextArrow{
+        top: 60%;
+    }
+    .info-introduce .info-introduce-wrap__right .PrevArrow{
+        top: 40%;
+    }
+    .info-commit-all__title--text1,
+    .info-commit-all__title--text2{
+        font-size: 2.6rem;
+    }
+    .info-commit-all__item{
+        margin: 1rem 0;
+    }
+}
+@include responsive_tablet{
+    .info-introduce-wrap__left--content{
+        margin: 0rem 0rem;
+    }
+    .info-introduce-wrap__left--content-text{
+        padding: 8rem 1rem;
+    }
+    .info-introduce-wrap__left--content-quote-top{
+        left: 1rem;
+    }
+    .info-introduce-wrap__left--content-quote-bottom{
+        right: 1rem;
+    }
+    .info-introduce-wrap__right--image{
+        img{
+            height: 66rem;
+            object-fit: cover;
+        }
+    }
+    .info-commit-all__item{
+        margin: 2rem 0;
+    }
+}
+
+@include responsive_tablet-mobile{
+    .info-introduce-wrap__left--content{
+        margin: 0rem 0rem;
+    }
+    .info-introduce-wrap__left--content-text{
+        padding: 8rem 1rem;
+    }
+    .info-introduce-wrap__left--content-quote-top{
+        left: 1rem;
+    }
+    .info-introduce-wrap__left--content-quote-bottom{
+        right: 1rem;
+    }
+}

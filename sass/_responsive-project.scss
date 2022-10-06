@@ -1,0 +1,29 @@
+@include responsive_mobile{
+    .project-banner{
+        &-title{
+            padding-top:2rem;
+            font-size: 2.6rem;
+            line-height: 4rem;
+            min-height: 6rem;
+        }
+    }
+    .project-implementation{
+        &-all{
+            display: block;
+            &__heading--text1{
+                font-size: 2.6rem;
+            }
+            &__heading--text1{
+                font-size: 2.6rem;
+            }
+            &__option{
+                margin-top: 2rem;
+                width: 100%;
+            }
+        }
+        &-hover__describe--text-name{
+            line-height: 2rem;
+        }
+    }
+    
+}

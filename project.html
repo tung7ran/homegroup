@@ -23,13 +23,19 @@
 <body>
     <div class="wapper">
         <header class="header">
-            <div class="header-menu">
-                <div class="container">
+            <div class="header-menu navbar">
+                <div class="container navbar-container">
                     <div class="header-menu-all">
                         <a href="" class="header-menu-all__image">
                             <img src="./images/header/logo.png" alt="">
                         </a>
-                        <ul class="header-menu-all__list">
+                        <input type="checkbox" name="" id="" class="checkbox-menu">
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                        <ul class="header-menu-all__list menu-items">
                             <li class="header-menu-all__list--item item-card">
                                 <a href="" class="header-menu-all__list--item-link">
                                     THIẾT KẾ NỘI THẤT 
@@ -98,7 +104,6 @@
                 </div>
             </div>
         </header>
-
         <div class="content">
             <div class="project-banner">
                 <div class="container">
@@ -149,7 +154,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/IMG_0108.jpg" alt="">
@@ -161,7 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/B-2-2.jpg" alt="">
@@ -173,7 +178,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/A-2.jpg" alt="">
@@ -185,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/Home-Group-18.jpg" alt="">
@@ -197,7 +202,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/khach-4.jpg" alt="">
@@ -209,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/KB_CShading_LightMix_View02.jpg" alt="">
@@ -221,7 +226,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/PHONG-KHACH_CShading_LightMix_View07.jpg" alt="">
@@ -233,7 +238,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/KHACH-BEP-AN-4.jpg" alt="">
@@ -245,7 +250,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/the-two-gamuda-homegroup-5.jpg" alt="">
@@ -257,7 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/A-6.jpg" alt="">
@@ -269,7 +274,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/Home-Group-401.jpg" alt="">
@@ -281,7 +286,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="project-implementation-hover">
                             <a href="" class="project-implementation-hover__image">
                                 <img src="./images/project/flc-thanh-hoa-9.jpg" alt="">
@@ -362,7 +367,6 @@
                 </ul>
             </section>
         </div>
-
         <footer class="footer">
             <div class="footer-top">
                 <div class="container">
@@ -569,6 +573,19 @@
                 </div>
             </div>
         </footer>
+        <button id="myBtn" title="Go to top">
+            <i class="fa fa-angle-up fa-3"></i>
+        </button>
+        <a rel="nofollow" href="https://zalo.me/0937498868" class="cta-action-text" target="_blank">
+            <img alt="icon-zalo" class="icon-zalo" src="https://homegroup.vn/wp-content/themes/kienthuc/assets/images/zalo.png">
+        </a>
+        <div class="hotline mm-page mm-slideout" id="mm-0">
+            <div id="phonering-alo-phoneIcon" class="phonering-alo-phone phonering-alo-green phonering-alo-show">
+                <div class="phonering-alo-ph-img-circle">
+                    <a class="pps-btn-img " title="Liên hệ" href="tel:1800646426"> <img src="./images/icon/index/tải xuống.png" alt="Liên hệ" width="50" class="img-responsive"> </a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
