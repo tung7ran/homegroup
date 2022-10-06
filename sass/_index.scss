@@ -1,0 +1,733 @@
+.img-fill {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center
+}
+
+.img-fill img {
+  height: 100%;
+  min-width: 100%;
+  position: relative;
+  display: inline-block;
+  max-width: none
+}
+
+.Modern-Slider{
+  position:relative;
+}
+
+.Modern-Slider .img-fill {
+  height: 100%;
+  background:#000;
+}
+
+.Modern-Slider .img-fill:before {
+  content: '';
+  display: block;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:2;
+  position: absolute;
+}
+
+.Modern-Slider .img-fill .info {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index:3;
+  top:30%;
+  padding:0 20px;
+}
+
+.Modern-Slider .img-fill h3{
+  padding-top: 20rem;
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: $color-black;
+  text-shadow: 1px 1px #ffffff;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  visibility:hidden;
+  text-transform:uppercase;
+}
+
+.Modern-Slider .img-fill p{
+  margin-top: 1.5rem;
+  color: #FFF;
+  font-size: 1.8rem;
+  visibility: hidden;
+  text-transform: capitalize;
+}
+
+.Modern-Slider .slick-active h3{
+  animation:fadeInDown 1s both 0.5s;
+  visibility:visible;
+}
+.Modern-Slider .slick-active p{
+  animation:fadeInUp 1s both 1s;
+  visibility:visible;
+}
+
+.modern-container {
+  margin: 5rem auto;
+  padding-top: 0px;
+  position: relative;
+  width: 16rem;    
+  .modern-btn {
+    display: block;
+    margin: 0 auto;
+    color: #000;
+    width: 24rem;
+    line-height: 5rem;
+    background: #f1d52b;
+    font-size: 1.8rem;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    border: 3px solid;
+    text-transform: uppercase;
+  }
+  .modern-content, 
+  .modern-backdrop {
+    height: 0; 
+    width: 0; 
+    opacity: 0;    
+    visibility: hidden;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: opacity 0.2s ease-in; 
+  }
+  .modern-close {
+    color: #8f8220;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    padding-top: 0.3rem;
+    font-size: 2.8rem;
+    width: 2.5;
+    height: 2.5;
+    font-weight: 6000;
+    text-align: center;
+    cursor: pointer;
+    &:hover { color: #333; }        
+  }      
+  #modern-toggle {
+    display: none;  
+    &.active ~ .modern-backdrop,
+    &:checked ~ .modern-backdrop {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      visibility: visible;
+      opacity: 1;      
+      transition: opacity 0.2s ease-in; 
+    }
+    &.active ~ .modern-content,
+    &:checked ~ .modern-content {
+      opacity: 1;
+      background-color: #f8e037;
+      max-width: 60rem;
+      width: 60rem;
+      height: 65rem;
+      padding: 10px 30px;
+      position: fixed;
+      left: calc(50% - 200px);
+      top: 12%;
+      border-radius: 4px;
+      z-index: 999;
+      pointer-events: auto;
+      cursor: auto;
+      visibility: visible;      
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);  
+      @media (max-width: 400px) { left: 0; }                   
+    }  
+  }
+}
+
+.home-content{
+  position: relative;
+  margin-top: 5.2rem;
+  margin-bottom: 11rem;
+  padding-left: 9rem;
+  padding-right: 6rem;
+  &-image__top{
+    width: 4.4rem;
+    position: absolute;
+    top: -1.2rem;
+    left: 2rem;
+  }
+  &-image__bottom{
+    position: absolute;
+    bottom: -4rem;
+    right: 0rem;
+  }
+  &-heading{
+    min-height: 3rem;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &-sub{
+    p{
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+    }
+  }
+}
+
+.service-content{
+  padding: 0 1rem;
+  &-heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    &__title{
+      font-size: 3.6rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+  &-image{
+    position: relative;
+    display: block;
+    height: 34rem;
+    margin: 1.5rem 0;
+  }
+  &-describe{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $color-white;
+    background-color: $color-background-service;
+    margin: 0 1.5rem;
+    &__text{
+      .border-top-custom{
+        position: absolute;
+        bottom: 6.3rem;
+        right: 0;
+        left: 0;
+        width: 25rem;
+        border: 1px solid $color-border-service;
+        margin: auto;
+      }
+      &--name{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 0;
+        left: 0;
+        text-align: center;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $color-white;
+        background: $color-background-service;
+        padding: 2rem 0;
+      }
+    }
+  }
+  &-hover{
+    display: none;
+    background: $color-hover-service;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 5rem;
+    margin: 1.5rem 1.5rem;
+    &__title{
+      font-size: 3rem;
+      color:$color-hover-title-service;
+      min-height: 4rem;
+    }
+    .border-bottom-custom{
+      border: 1px solid $color-black;
+      width: 22rem;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    &__sub{
+      margin-top: 2rem;
+      span{
+        line-height: 2.6rem;
+        font-size: 1.8rem;
+        text-align: justify;
+      }
+    }
+    &__more{
+      display: flex;
+      justify-content: center;
+      margin-top: 1.5rem;
+      a{
+        color: $color-black;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1.5rem 2rem;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid $color-black;
+      }
+    }
+  }
+  .service-item-hover:hover .service-content-hover{
+    display: block;
+    cursor: pointer;
+  }
+  .service-item-hover:hover .service-content-describe{
+    display: none;
+  }
+}
+
+.design-content{
+  position: relative;
+  margin-top: 7rem;
+  &-title{
+    text-align: center;
+    &__text{
+      font-size: 3.6rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      color:$color-design-text;
+    }
+  }
+  &-sub{
+    margin-top: 1rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 6rem;
+    &__text{
+      font-size: 3.6rem;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+  &-sub::after{
+    position: absolute;
+    content: "";
+    width: 9rem;
+    height: 0.2rem;
+    background-color: $color-design-text;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -2rem;
+  }
+  &-describe{
+    margin-bottom: 5.5rem;
+    text-align: center;
+    &__text{
+      font-size: 1.8rem;
+    }
+  }
+  &-logo{
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+  }
+  &-slider{
+    cursor: pointer;
+    padding-left: 15%;
+    &__list{ 
+      width: 31.5rem;
+      margin-left: 1.5rem;
+      &-image{
+        text-align: center;
+        width: 7.3rem;
+        height: auto;
+        margin: 0 auto;
+      }
+      &-text{
+        display: block;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        line-height: 3rem;
+      }
+      &-sub{
+        color:$color-design-slider;
+        font-size: 1.8rem;
+        line-height: 3rem;
+      }
+    }
+  }
+}
+
+.slick-prev{
+  display: none !important;
+}
+.slick-next{
+  display: none !important;
+}
+
+.house-content{
+  background-color:$color-house;
+  height: 56rem;
+  margin-top: 30rem;
+  .house-content-rise{
+    position: relative;
+    top: -20rem;
+  }
+  &-title{
+    display: flex;
+    justify-content: space-between;
+    &__text{
+      &--one{
+        font-size: 3.6rem;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+      &--two{
+        font-size: 3.6rem;
+        font-weight: 300; 
+        text-transform: uppercase;
+        line-height: 5rem;
+      }
+    }
+    &__project{
+      font-size: 7.8rem;
+      color: #d2d2d2;
+    }
+  }
+  &-image{
+    position: relative;
+    display: block;
+    height: 24rem;
+    margin: 1.5rem 0;
+  }
+  &-describe{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: $color-white;
+    background: $color-background-service;
+    margin: 0 1.5rem;
+    &__text{
+      .border-top-custom{
+        position: absolute;
+        bottom: 6.3rem;
+        right: 0;
+        left: 0;
+        width: 25rem;
+        border: 1px solid #f7df37;
+        margin: auto;
+      }
+      &--name{
+        position: absolute;
+        bottom: 1.5rem;
+        right: 0;
+        left: 0;
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: #0000003b;
+        padding: 2rem 0;
+      }
+    }
+  }
+  &-hover{
+    display: none;
+    background: $color-house-hover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 5rem;
+    margin: 1.5rem 1.5rem;
+    &__title{
+      text-align: center;
+      p{
+        font-size: 1.8rem;
+        line-height: 2.6rem;
+        color: $color-house-title;
+        text-transform: uppercase;
+        padding: 0.5rem 0rem;
+      }
+    }
+  }
+  .house-item-hover:hover .house-content-hover{
+    display: block;
+    cursor: pointer;
+  }
+  .house-item-hover:hover .house-content-describe{
+    display: none;
+  }
+
+  &-hover__more{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    a{
+      color: $color-black;
+      font-size: 2rem;
+      font-weight: 500;
+      padding: 1.5rem 2rem;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid $color-black;
+    }
+  }
+}
+
+.advise-content{
+  &-left{
+    width: 100%;
+    height: 100%;
+  }
+  &-color{
+    background-color:$color-advise;
+  }
+  &-right{
+    padding: 0 7rem;
+    &__amount{
+      text-align: center;
+      &--number{
+        font-size: 10.7rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        line-height: 9rem;
+      }
+    }
+    &__title{
+      text-align: center;
+      &--text{
+        font-size: 4rem;
+        line-height: 5rem;
+        margin: 3rem 0;
+      }
+    }
+    &__describe{
+      margin-top: 6rem;
+      margin-bottom: 3.5rem;
+      text-align: center;
+      &--text{
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+.modal-container {
+  margin: 5rem auto;
+  padding-top: 0rem;
+  position: relative;
+  width: 100%;    
+  .modal-btn {
+    display: block;
+    margin: 0 auto;
+    color: $color-black;
+    width: 22rem;
+    line-height: 5rem;
+    background: $color-white;
+    font-size: 2rem;
+    border: 0;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+    border: 0.3rem solid;
+  }
+  .modal-content, 
+  .modal-backdrop {
+    height: 0; 
+    width: 0; 
+    opacity: 0;    
+    visibility: hidden;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: opacity 0.2s ease-in; 
+  }
+  .modal-close {
+    color: $color-model-close;
+    position: absolute;
+    right: 1rem;
+    top: 2rem;
+    padding-top: 0.3rem;
+    font-size: 2.8rem;
+    width: 2.5;
+    height: 2.5;
+    font-weight: 6000;
+    text-align: center;
+    cursor: pointer;
+    &:hover { color: $color-model-hover-close; }        
+  }      
+  #modal-toggle {
+    display: none;  
+    &.active ~ .modal-backdrop,
+    &:checked ~ .modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      visibility: visible;
+      opacity: 1;      
+      transition: opacity 0.2s ease-in; 
+    }
+    &.active ~ .modal-content,
+    &:checked ~ .modal-content {
+      opacity: 1;
+      background-color: #f8e037;
+      max-width: 100%;
+      width: 32%;
+      height: 65rem;
+      padding: 10px 30px;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 12%;
+      border-radius: 4px;
+      z-index: 999;
+      pointer-events: auto;
+      cursor: auto;
+      visibility: visible;      
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);                  
+    }  
+  }
+}
+
+.modal-title-text{
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin: 4rem auto;
+}
+
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  input{
+    width: 100%;
+    height: 5rem;
+    padding-left: 4rem;
+    border: 0;
+    color: $color-black;
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    outline: none;
+    line-height: 5rem;
+  }
+  .modal-seclect{
+    width: 100%;
+    height: 5rem;
+    padding-left: 4rem;
+    border: 0;
+    color: $color-black;
+    font-size: 2.4rem;
+    margin: 1rem 0;
+    outline: none;
+    line-height: 5rem;
+    &-label{
+      text-align: left;
+      font-size: 2rem;
+      padding-left: 2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+  }
+  .modal-form-btn {
+    text-align: center;
+    width: 22rem;
+    background: #000;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 0;
+    margin: 5rem auto;
+    cursor: pointer;
+  }
+}
+
+.believe-content{
+  margin-top: 10rem;
+  &-heading{
+    text-align: center;
+    margin-bottom: 2rem;
+    &__text{
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
+  &-describe{
+    margin-bottom: 4rem;
+    text-align: center;
+    &__text{
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+  &-feedback{
+    cursor: pointer;
+    &__image{
+      width: 27rem;
+      height: 43rem;
+    }
+  }
+}
+
+.question-content{
+  margin-bottom: 8.6rem;
+  &-heading{
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    &__title{
+      font-size: 3.6rem;
+      text-transform: uppercase;
+      font-weight: 300;
+    }
+  }
+  &-list{
+    &__item{
+      &--link{
+        margin: 2rem 0;
+        a{
+          font-size: 2rem;
+          color: $color-black;
+          font-weight: 600;
+        }
+      }
+      &--link::before{
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: $color-black;
+        position: absolute;
+        border-radius: 50%;
+        left: 35rem;
+      }
+      &--text{
+        span{
+          font-size: 2rem;
+          color: $color-black;
+          font-weight: 300;
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}
+

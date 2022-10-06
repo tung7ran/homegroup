@@ -18,18 +18,24 @@
     <!-- slick.css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <!-- link css -->
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./sass/main.css">
 </head>
 <body>
     <div class="wapper">
         <header class="header">
-            <div class="header-menu">
-                <div class="container">
+            <div class="header-menu navbar">
+                <div class="container navbar-container">
                     <div class="header-menu-all">
                         <a href="" class="header-menu-all__image">
-                            <img src="./image/header/logo.png" alt="">
+                            <img src="./images/header/logo.png" alt="">
                         </a>
-                        <ul class="header-menu-all__list">
+                        <input type="checkbox" name="" id="" class="checkbox-menu">
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                        <ul class="header-menu-all__list menu-items">
                             <li class="header-menu-all__list--item item-card">
                                 <a href="" class="header-menu-all__list--item-link">
                                     THIẾT KẾ NỘI THẤT 
@@ -98,35 +104,791 @@
                 </div>
             </div>
         </header>
-        <div class="content" style="height: 10rem;"></div>
+        <div class="Modern-Slider">
+            <div class="item">
+              <div class="img-fill">
+                <img src="./images/index/homegroup-slide1.jpg" alt="">
+                <div class="info">
+                  <h3>THIẾT KẾ - THI CÔNG TRỌN GÓI</h3>
+                  <p>Cùng trải nghiệm về dịch vụ thiết kế thi công nội thất tại HomeGroup</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="img-fill">
+                <img src="./images/index/homegroup-slide2.jpg" alt="">
+                <div class="info">
+                    <h3>XƯỞNG SẢN XUẤT TRỰC TIẾP</h3>
+                    <p>Không qua trung gian - Giá thành cạnh tranh</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="content">
+            <section class="home-content container">
+                <div class="home-content-image__top">
+                    <img src="./images/icon/index/icon-quote-top.png" alt="">
+                </div>
+                <div class="home-content-image__bottom">
+                    <img src="./images/icon/index/icon-quote-top.png" alt="">
+                </div>
+                <div class="home-content-heading">Về chúng tôi</div>
+                <div class="home-content-sub">
+                    <p>Công ty Cổ phần Xây dựng và Nội thất HomeGroup là doanh nghiệp hàng đầu trong lĩnh vực Thiết kế và Thi công Nội thất hiện nay với hơn 10 năm kinh nghiệm. Chúng tôi chuyên thiết kế, sản xuất và thi công nội thất trọn gói cho Chung Cư, Biệt Thự, Văn Phòng, Nhà Phố, Nhà Hàng…Và là đơn vị chuyên gia công cho các công ty Thiết kế Nội thất. Giá thành cạnh tranh do sản xuất trực tiếp không qua trung gian.</p>
+                </div>
+            </section>
+            <section class="service-content">
+                <div class="service-content-heading">
+                    <h1 class="service-content-heading__title">
+                        DỊCH VỤ CỦA HOMEGROUP
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item-hover">
+                            <a href="" class="service-content-image">
+                                <img src="./images/index/xuonghomegroup.jpg" alt="">
+                            </a>
+                            <div class="service-content-describe">
+                                <div class="service-content-describe__text">
+                                    <div class="border-top-custom"></div>
+                                    <div class="service-content-describe__text--name">SẢN XUẤT NỘI THẤT</div>
+                                </div>
+                            </div>
+                            <div class="service-content-hover">
+                                <div class="service-content-hover__title">
+                                    SẢN XUẤT NỘI THẤT
+                                </div>
+                                <div class="border-bottom-custom"></div>
+                                <div class="service-content-hover__sub">
+                                   <span>HomeGroup với xưởng sản xuất máy móc hiện đại cùng với đội ngũ kiến trúc sư, thợ sản xuất giỏi nhiều năm kinh nghiệm sẽ mang tới những sản phẩm chất lượng cao.</span> 
+                                </div>
+                                <div class="service-content-hover__more">
+                                    <a href="">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item-hover">
+                            <a href="" class="service-content-image">
+                                <img src="./images/index/homegroup-chungcu.jpg" alt="">
+                            </a>
+                            <div class="service-content-describe">
+                                <div class="service-content-describe__text">
+                                    <div class="border-top-custom"></div>
+                                    <div class="service-content-describe__text--name">NỘI THẤT CHUNG CƯ</div>
+                                </div>
+                            </div>
+                            <div class="service-content-hover">
+                                <div class="service-content-hover__title">
+                                    NỘI THẤT CHUNG CƯ
+                                </div>
+                                <div class="border-bottom-custom"></div>
+                                <div class="service-content-hover__sub">
+                                   <span>Nội thất HomeGroup đã triển khai thiết kế thi công hơn +1000 căn hộ chung cư lớn nhỏ, trong đó có nhiều công trình cho cộng đồng người Hàn Quốc, Nhật Bản tại Việt Nam.</span> 
+                                </div>
+                                <div class="service-content-hover__more">
+                                    <a href="">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item-hover">
+                            <a href="" class="service-content-image">
+                                <img src="./images/index/nhapho-homegroup.jpg" alt="">
+                            </a>
+                            <div class="service-content-describe">
+                                <div class="service-content-describe__text">
+                                    <div class="border-top-custom"></div>
+                                    <div class="service-content-describe__text--name">NỘI THẤT NHÀ PHỐ</div>
+                                </div>
+                            </div>
+                            <div class="service-content-hover">
+                                <div class="service-content-hover__title">
+                                    NỘI THẤT NHÀ PHỐ
+                                </div>
+                                <div class="border-bottom-custom"></div>
+                                <div class="service-content-hover__sub">
+                                   <span>Những lưu ý khi thiết kế nội thất nhà phố. Kèm những mẫu nhà phố đã được triển khai tại Nội thất HomeGroup sẽ giúp bạn có thêm ý tưởng cho không gian của mình.</span> 
+                                </div>
+                                <div class="service-content-hover__more">
+                                    <a href="">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item-hover">
+                            <a href="" class="service-content-image">
+                                <img src="./images/index/noithatvanphong-homegroup.jpg" alt="">
+                            </a>
+                            <div class="service-content-describe">
+                                <div class="service-content-describe__text">
+                                    <div class="border-top-custom"></div>
+                                    <div class="service-content-describe__text--name">NỘI THẤT VĂN PHÒNG</div>
+                                </div>
+                            </div>
+                            <div class="service-content-hover">
+                                <div class="service-content-hover__title">
+                                    NỘI THẤT VĂN PHÒNG
+                                </div>
+                                <div class="border-bottom-custom"></div>
+                                <div class="service-content-hover__sub">
+                                   <span>Nội thất HomeGroup là đơn vị uy tín cung cấp thiết kế thi công nội thất Văn Phòng. HomeGroup sẽ mang tới cho bạn không gian lý tưởng để làm việc.</span> 
+                                </div>
+                                <div class="service-content-hover__more">
+                                    <a href="">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item-hover">
+                            <a href="" class="service-content-image">
+                                <img src="./images/index/biethu-homegroup.jpg" alt="">
+                            </a>
+                            <div class="service-content-describe">
+                                <div class="service-content-describe__text">
+                                    <div class="border-top-custom"></div>
+                                    <div class="service-content-describe__text--name">NỘI THẤT BIỆT THỰ</div>
+                                </div>
+                            </div>
+                            <div class="service-content-hover">
+                                <div class="service-content-hover__title">
+                                    NỘI THẤT BIỆT THỰ
+                                </div>
+                                <div class="border-bottom-custom"></div>
+                                <div class="service-content-hover__sub">
+                                   <span>Phong cách cổ điển, phong cách tân cổ điển, phong cách hiện đại là những gì HomeGroup đang triển khai cho biệt thự liền kề, biệt thự song lập. Hãy tham khảo báo giá…</span> 
+                                </div>
+                                <div class="service-content-hover__more">
+                                    <a href="">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="service-item-hover">
+                            <a href="" class="service-content-image">
+                                <img src="./images/index/nhahang.homegroup.jpg" alt="">
+                            </a>
+                            <div class="service-content-describe">
+                                <div class="service-content-describe__text">
+                                    <div class="border-top-custom"></div>
+                                    <div class="service-content-describe__text--name">NỘI THẤT NHÀ HÀNG</div>
+                                </div>
+                            </div>
+                            <div class="service-content-hover">
+                                <div class="service-content-hover__title">
+                                    NỘI THẤT NHÀ HÀNG
+                                </div>
+                                <div class="border-bottom-custom"></div>
+                                <div class="service-content-hover__sub">
+                                   <span>Nội thất HomeGroup chuyên tư vấn thiết kế nội thất nhà hàng, thi công cải tạo nhà hàng đẹp, sang trọng, mang lại thương hiệu không gian độc đáo phù hợp với hình thức...</span> 
+                                </div>
+                                <div class="service-content-hover__more">
+                                    <a href="">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="design-content">
+                <div class="container">
+                    <div class="design-content-title">
+                        <h1 class="design-content-title__text">
+                            DẪN ĐẦU THIẾT KẾ THI CÔNG NỘI THẤT
+                        </h1>
+                    </div>
+                    <div class="design-content-sub">
+                        <h1 class="design-content-sub__text"><strong>HOMEGROUP </strong> SẼ THIẾT KẾ NHÀ BẠN ĐẶC SẮC NHẤT</h1>
+                    </div>
+                    <div class="design-content-describe">
+                        <b class="design-content-describe__text">Sở hữu cho mình một không gian có thiết kế nội thất đẹp chưa bao giờ dễ dàng đến thế.</b>
+                    </div>
+                    <div class="design-content-logo">
+                        <img src="./images/index/img-1.png" alt="">
+                    </div>
+                    <div class="design-content-slider">
+                        <div class="design-content-slider__list">
+                            <div class="design-content-slider__list-image">
+                                <img src="./images/icon/index/icon-tick.png" alt="">
+                            </div>
+                            <b class="design-content-slider__list-text">
+                                Chất lượng vật liệu tốt nhất với tầm giá 
+                            </b>
+                            <span class="design-content-slider__list-sub">
+                                HomeGroup luôn thấu hiểu với gia chủ về chi phí đầu tư cho ngôi nhà của mình nên chúng tôi cam kết lựa chọn những vật liệu tốt nhất, bền đẹp theo thời gian mà chi phí lại hợp lý nhất.
+                            </span>
+                        </div>
+                        <div class="design-content-slider__list">
+                            <div class="design-content-slider__list-image">
+                                <img src="./images/icon/index/icon-tick.png" alt="">
+                            </div>
+                            <b class="design-content-slider__list-text">
+                                Thiết kế nội thất đẹp phải bộc lộ được cá tính của chủ nhân
+                            </b>
+                            <span class="design-content-slider__list-sub">
+                                Không chỉ đơn giản là làm sao để phù hợp với ngôi nhà, thiết kế nội thất còn phải toát lên được thần thái, sở thích cũng như gia thế của chủ nhân ngôi nhà.
+                            </span>
+                        </div>
+                        <div class="design-content-slider__list">
+                            <div class="design-content-slider__list-image">
+                                <img src="./images/icon/index/icon-tick.png" alt="">
+                            </div>
+                            <b class="design-content-slider__list-text">
+                                Tiêu chuẩn thiết kế nội thất hợp phong thủy 
+                            </b>
+                            <span class="design-content-slider__list-sub">
+                                Thiết kế nội thất hợp phong thủy là điều rất quan trọng. Khi gia đình bạn có một thiết kế nội thất hợp phong thủy sẽ mang lại sức khỏe, sự thành đạt trong cuộc sống của các thành viên trong gia đình.
+                            </span>
+                        </div>
+                        <div class="design-content-slider__list">
+                            <div class="design-content-slider__list-image">
+                                <img src="./images/icon/index/icon-tick.png" alt="">
+                            </div>
+                            <b class="design-content-slider__list-text">
+                                Chất lượng vật liệu tốt nhất với tầm giá 
+                            </b>
+                            <span class="design-content-slider__list-sub">
+                                HomeGroup luôn thấu hiểu với gia chủ về chi phí đầu tư cho ngôi nhà của mình nên chúng tôi cam kết lựa chọn những vật liệu tốt nhất, bền đẹp theo thời gian mà chi phí lại hợp lý nhất.
+                            </span>
+                        </div>
+                        <div class="design-content-slider__list">
+                            <div class="design-content-slider__list-image">
+                                <img src="./images/icon/index/icon-tick.png" alt="">
+                            </div>
+                            <b class="design-content-slider__list-text">
+                                Thiết kế nội thất đẹp phải bộc lộ được cá tính của chủ nhân
+                            </b>
+                            <span class="design-content-slider__list-sub">
+                                Không chỉ đơn giản là làm sao để phù hợp với ngôi nhà, thiết kế nội thất còn phải toát lên được thần thái, sở thích cũng như gia thế của chủ nhân ngôi nhà.
+                            </span>
+                        </div>
+                        <div class="design-content-slider__list">
+                            <div class="design-content-slider__list-image">
+                                <img src="./images/icon/index/icon-tick.png" alt="">
+                            </div>
+                            <b class="design-content-slider__list-text">
+                                Tiêu chuẩn thiết kế nội thất hợp phong thủy 
+                            </b>
+                            <span class="design-content-slider__list-sub">
+                                Thiết kế nội thất hợp phong thủy là điều rất quan trọng. Khi gia đình bạn có một thiết kế nội thất hợp phong thủy sẽ mang lại sức khỏe, sự thành đạt trong cuộc sống của các thành viên trong gia đình.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="house-content">
+                <div class="container house-content-rise">
+                    <div class="house-content-title">
+                        <div class="house-content-title__text">
+                            <div class="house-content-title__text--one">
+                                <h1>dự án của homegroup</h1>
+                            </div>
+                            <div class="house-content-title__text--two">
+                                <p>Đã triển khai</p>
+                            </div>
+                        </div>
+                        <div class="house-content-title__project">
+                            <h1>PROJECT</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="house-item-hover">
+                                <a href="" class="house-content-image">
+                                    <img src="./images/index/B-1-1.jpg" alt="">
+                                </a>
+                                <div class="house-content-describe">
+                                    <div class="house-content-describe__text">
+                                        <div class="border-top-custom"></div>
+                                        <div class="house-content-describe__text--name">Westbay B Ecopark 3 ngủ</div>
+                                    </div>
+                                </div>
+                                <div class="house-content-hover">
+                                    <div class="house-content-hover__title">
+                                        <p>Địa chỉ: Ecopark Hưng Yên</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="house-item-hover">
+                                <a href="" class="house-content-image">
+                                    <img src="./images/index/khach-4.jpg" alt="">
+                                </a>
+                                <div class="house-content-describe">
+                                    <div class="house-content-describe__text">
+                                        <div class="border-top-custom"></div>
+                                        <div class="house-content-describe__text--name">PENTHOUSES COMATCE TOWER </div>
+                                    </div>
+                                </div>
+                                <div class="house-content-hover">
+                                    <div class="house-content-hover__title">
+                                       <p>Diện tích: 267m2</p> 
+                                       <p>Chi phí: 1.300.000.000 đ</p>
+                                       <p>Địa chỉ: Ngụy Như Kon Tum – Thanh Xuân – Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="house-item-hover">
+                                <a href="" class="house-content-image">
+                                    <img src="./images/index/flc-thanh-hoa-9.jpg" alt="">
+                                </a>
+                                <div class="house-content-describe">
+                                    <div class="house-content-describe__text">
+                                        <div class="border-top-custom"></div>
+                                        <div class="house-content-describe__text--name">VILLA NGHỈ DƯỠNG FLC Sầm Sơn</div>
+                                    </div>
+                                </div>
+                                <div class="house-content-hover">
+                                    <div class="house-content-hover__title">
+                                       <p>Diện tích: 450m2</p> 
+                                       <p>Chi phí: 750.000.000 đ</p>
+                                       <p>Địa chỉ: FLC Sầm Sơn – Thanh Hóa</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="house-item-hover">
+                                <a href="" class="house-content-image">
+                                    <img src="./images/index/HG-1.jpg" alt="">
+                                </a>
+                                <div class="house-content-describe">
+                                    <div class="house-content-describe__text">
+                                        <div class="border-top-custom"></div>
+                                        <div class="house-content-describe__text--name">Đại Sứ Quán Hàn Quốc</div>
+                                    </div>
+                                </div>
+                                <div class="house-content-hover">
+                                    <div class="house-content-hover__title">
+                                       <p>Chi phí: 2.500.000.000 đ</p> 
+                                       <p>Địa chỉ: Ngoại Giao Đoàn – Bắc Từ Liêm – Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="house-item-hover">
+                                <a href="" class="house-content-image">
+                                    <img src="./images/index/VIEW-23.jpg" alt="">
+                                </a>
+                                <div class="house-content-describe">
+                                    <div class="house-content-describe__text">
+                                        <div class="border-top-custom"></div>
+                                        <div class="house-content-describe__text--name">Chung cư Aquabay Ecopark</div>
+                                    </div>
+                                </div>
+                                <div class="house-content-hover">
+                                    <div class="house-content-hover__title">
+                                       <p>Diện tích: 160m2</p> 
+                                       <p>Chi phí: 680.000.000 đ</p>
+                                       <p>Địa chỉ: Ecopark – Hưng Yên</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="house-item-hover">
+                                <a href="" class="house-content-image">
+                                    <img src="./images/index/Home-Group-22.jpg" alt="">
+                                </a>
+                                <div class="house-content-describe">
+                                    <div class="house-content-describe__text">
+                                        <div class="border-top-custom"></div>
+                                        <div class="house-content-describe__text--name">Cải tạo chung cư Dương Nội</div>
+                                    </div>
+                                </div>
+                                <div class="house-content-hover">
+                                    <div class="house-content-hover__title">
+                                       <p>Diện tích: 86m2</p> 
+                                       <p>Chi phí: 350.000.000 đ</p>
+                                       <p>Địa chỉ: Dương Nội – Hà Đông – Hà Nội</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house-content-hover__more">
+                        <a href="">Xem thêm</a>
+                    </div>
+                </div>
+            </section>
+            <section class="advise-content">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="advise-content-left">
+                            <img src="./images/index/img-left.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 advise-content-color">
+                        <div class="advise-content-right">
+                            <div class="advise-content-right__amount">
+                                <p class="advise-content-right__amount--number">
+                                    > 2.000
+                                </p>
+                            </div>
+                            <div class="advise-content-right__title">
+                                <h1 class="advise-content-right__title--text">Khách hàng tin dùng thiết kế tại HomeGroup.vn</h1>
+                            </div>
+                            <div class="advise-content-right__describe">
+                                <span class="advise-content-right__describe--text">Trải nghiệm dịch vụ ngay hôm nay</span>
+                            </div>
+                            <div class="modal-container">
+                                <input id="modal-toggle" type="checkbox">
+                                <label class="modal-btn" for="modal-toggle">Chuyên viên tư vấn</label> 
+                                <label class="modal-backdrop" for="modal-toggle"></label>
+                                <div class="modal-content">
+                                  <label class="modal-close" for="modal-toggle">&#x2715;</label>
+                                  <label for="" class="modal-title-text">TƯ VẤN LIÊN HỆ BÁO GIÁ</label>
+                                    <form action="" class="modal-form">
+                                        <input type="text" placeholder="Họ và tên">
+                                        <input type="text" placeholder="Email">
+                                        <input type="number" placeholder="Số điện thoại">
+                                        <select id="cars" class="modal-seclect">
+                                            <option value="">Chủ doanh nghiệp</option>
+                                            <option value="">Cá nhân</option>
+                                            <option value="">Quản lý Marketing</option>
+                                            <option value="">Quản lý IT</option>
+                                            <option value="">Khác</option>
+                                          </select>
+                                          <label for="" class="modal-seclect-label">Homegroup gọi cho bạn khi nào thì phù hợp?</label>
+                                        <input type="date" name="time-start" id="">
+                                        <input type="submit" class="modal-form-btn" for="modal-toggle" value="Yêu cầu tư vấn"></input>   
+                                    </form>
+                                </div>          
+                            </div>  
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            <section class="believe-content container">
+                <div class="believe-content-heading">
+                    <h1 class="believe-content-heading__text">ĐƯỢC TIN YÊU</h1>
+                </div>
+                <div class="believe-content-describe">
+                    <h1 class="believe-content-describe__text">LÀ ĐIỀU HOMEGROUP TRÂN TRỌNG</h1>
+                </div>
+                <div class="believe-content-feedback">
+                    <div class="believe-content-feedback__image">
+                        <img src="./images/index/a-nghia-flc.jpg" alt="">
+                    </div>
+                    <div class="believe-content-feedback__image">
+                        <img src="./images/index/anh_phong-times_-768x1392-1.jpg" alt="">
+                    </div>
+                    <div class="believe-content-feedback__image">
+                        <img src="./images/index/chi_chi_ecopark-768x1479-1.jpg" alt="">
+                    </div>
+                    <div class="believe-content-feedback__image">
+                        <img src="./images/index/chi-dao_dcapital_-768x1479-1.jpg" alt="">
+                    </div>
+                    <div class="believe-content-feedback__image">
+                        <img src="./images/index/chi-mai-vinhome-768x1365-1.jpg" alt="">
+                    </div>
+                    <div class="believe-content-feedback__image">
+                        <img src="./images/index/phan-hoi-anh-hoa-sunshine.jpg" alt="">
+                    </div>
+                    <div class="believe-content-feedback__image">
+                        <img src="./images/index/a-nghia-flc.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="question-content container">
+                <div class="question-content-heading">
+                    <h1 class="question-content-heading__title">Câu hỏi thường gặp</h1>
+                </div>
+                <ul class="question-content-list">
+                    <li class="question-content-list__item">
+                        <div class="question-content-list__item--link">
+                            <a href="">Thiết kế nội thất có thật sự cần thiết?</a>
+                        </div>
+                        <div class="question-content-list__item--text">
+                            <span>Trong 10 năm trở lại đây, nhu cầu thiết kế nội thất không những ở các thành phố lớn mà cả ở những vùng nông thôn đã và đang ngày càng trở nên phổ biến.</span>
+                        </div>
+                    </li>
+                    <li class="question-content-list__item">
+                        <div class="question-content-list__item--link">
+                            <a href="">Dịch vụ thiết kế nội thất cung cấp cho bạn những gì?</a>
+                        </div>
+                        <div class="question-content-list__item--text">
+                            <span>Khi sử dụng dịch vụ thiết kế nội thất, bạn sẽ nhận được những giá trị sau:</span>
+                        </div>
+                    </li>
+                    <li class="question-content-list__item">
+                        <div class="question-content-list__item--link">
+                            <a href="">Những tiêu chí giúp lựa chọn đơn vị thiết kế thi công nội thất uy tín?</a>
+                        </div>
+                        <div class="question-content-list__item--text">
+                            <span> Khi tiến hành chọn lựa đơn vị thiết kế thi công nội thất, bạn cần chú ý những điều sau: Xem xét kinh nghiệm cũng như hồ sơ năng lực của công ty. Tham khảo chất lượng và tính thẩm mỹ của các dự án mà công ty đã thực hiện. Xem xét năng […]</span>
+                        </div>
+                    </li>
+                    <li class="question-content-list__item">
+                        <div class="question-content-list__item--link">
+                            <a href="">Chi phí thiết kế – Thi công nội thất được tính dựa trên yếu tố nào?</a>
+                        </div>
+                        <div class="question-content-list__item--text">
+                            <span>Chi phí thiết kế – thi công nội thất sẽ được tính dựa trên một số yếu tố sau: Diện tích thi công. Vị trí nhà ở. Ý tưởng thiết kế được chọn. Phong cách thiết kế. Nội thất sử dụng. Mức giá vật liệu, nhân công trên thị trường tại thời điểm hiện […]</span>
+                        </div>
+                    </li>
+                    <li class="question-content-list__item">
+                        <div class="question-content-list__item--link">
+                            <a href="">Gỗ dùng trong nội thất được chia làm mấy loại?</a>
+                        </div>
+                        <div class="question-content-list__item--text">
+                            <span>Hiện nay, trên thị trường có 2 nhóm gỗ cơ bản dùng để tạo nên đồ dùng nội thất, gồm có: Gỗ tự nhiên và gỗ công nghiệp. Từ hai nhóm này, chúng ta có nhiều lựa chọn chất gỗ khác nhau theo nhu cầu sử dụng như: Gỗ tự nhiên: Gỗ Sồi, Xoan […]</span>
+                        </div>
+                    </li>
+                    <li class="question-content-list__item">
+                        <div class="question-content-list__item--link">
+                            <a href="">Nên sử dụng gỗ tự nhiên hay công nghiệp cho nội thất?</a>
+                        </div>
+                        <div class="question-content-list__item--text">
+                            <span>Dưới đây Nội thất HomeGroup sẽ nêu ra một số ưu, nhược điểm của 2 loại gỗ trên để bạn tham khảo thêm trước khi đưa ra quyết định: Gỗ tự nhiên thường tạo nên cảm giác cổ điển, sang trọng, ấm cúng cho không gian. Có độ bền cao, màu sắc đẹp, vân […]</span>
+                        </div>
+                    </li>
+                    <li class="question-content-list__item">
+                        <div class="question-content-list__item--link">
+                            <a href="">Có nên tận dụng đồ nội thất cũ cho không gian nội thất khi thiết kế mới?</a>
+                        </div>
+                        <div class="question-content-list__item--text">
+                            <span>Thực tế rằng trong tâm trí của mỗi người thì không ai là người muốn sử dụng đồ cũ. Tuy nhiên, các giới hạn về tài chính cũng như điều kiện về tiềm năng chi trả khiến cho họ buộc phải cân nhắc có nên dùng đồ cũ hay không.</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
         <footer class="footer">
             <div class="footer-top">
                 <div class="container">
                     <div class="row footer-top-all">
                         <div class="contact-footer-top email">
                             <div class="contact-footer-top__icon">
-                                <img src="./icon/footer/icon-email.png" alt="email">
+                                <img src="./images/icon/footer/icon-email.png" alt="email">
                             </div>
                             <span class="contact-footer-top__text">Email:</span>
                             <a class="contact-footer-top__link" href="mailto:homegroup.jsc@gmail.com">homegroup.jsc@gmail.com</a>
                         </div>
                         <div class="contact-footer-top phone">
                             <div class="contact-footer-top__icon--phone">
-                                <img src="./icon/footer/icon-phone.png" alt="email">
+                                <img src="./images/icon/footer/icon-phone.png" alt="email">
                             </div>
                             <span class="contact-footer-top__text">Hotline miễn cước:</span>
                             <a class="contact-footer-top__link" href="tel:1800 646426"> 1800 646426</a>
                         </div>
                         <div class="contact-footer-top chat">
                             <div class="contact-footer-top__icon">
-                                <img src="./icon/footer/icon-chat.png" alt="email">
+                                <img src="./images/icon/footer/icon-chat.png" alt="email">
                             </div>
                             <a class="contact-footer-top__link" href="https://zalo.me/0937498868">Chat Online</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="footer-between">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="footer-between-all">
+                                <div class="footer-between-all__title">
+                                    <h3 class="footer-between-all__title--text">Dịch vụ HomeGroup</h3>
+                                </div>
+                                <ul class="footer-between-all__list">
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link" class="footer-between-all__list--item-link">
+                                            Thiết kế chung cư
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thiết kế nhà phố
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thiết kế biệt thự
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thiết kế văn phòng
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thiết kế nhà hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thi công nội thất
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div  class="col-lg-2">
+                            <div class="footer-between-all__title">
+                                <h3 class="footer-between-all__title--text">Nội dung tham khảo</h3>
+                            </div>
+                            <ul class="footer-between-all__list">
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link" class="footer-between-all__list--item-link">
+                                        Dự án
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Chính sách bảo mật
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Chính sách bán hàng
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Videos
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwww.homegroup.vn&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                        <div class="col-lg-4">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rSitEjFF4d4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6 footer-title-contact">
+                            <div class="footer-between-all__title">
+                                <h3 class="footer-between-all__title--text">LIÊN HỆ</h3>
+                            </div>
+                            <ul class="footer-between-all__list">
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">Hotline miễn cước:<a href="" class="footer-between-all__list--item-bold"> 1800 646426</a></p>
+                                </li> 
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">VP Hà Nội :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Tầng 6 Toà nhà Sannam Building - 78 Duy Tân - Cầu Giấy - Hà Nội</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">VP Hồ Chí Minh :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">18 Phan Văn Trị – Phường 10 – Quận Gò Vấp – TP Hồ Chí Minh</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">VP Hải Phòng :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Số 16 – 08 Hanmata VinHome Hải Phòng</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">VP Thanh Hóa :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Số HH22 đường Hoa Hồng - KĐT VinHomes Star City - Thanh Hóa</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 footer-title-contact">
+                            <ul class="footer-between-all__list">
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">Xưởng sản xuất Miền Bắc :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Đội 1 Cao Sơn - Tiên Phương - Chương Mỹ - Hà Nội</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">Xưởng sản xuất Miền Nam :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Đường Nguyễn Xiển - Khu phố 8 - phường Long Bình - Biên Hoà - Đồng Nai</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Số ĐKKD - 0106776554 Được cấp bởi Sở KH&ĐT TP Hà Nội</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-all">
+                        <div class="footer-bottom-all__title">Website thuộc về Công ty Cổ phần Xây dựng và Nội thất HomeGroup</div>
+                        <div class="footer-bottom-all__image">
+                            <img src="./images/footer/logo-bct.png" alt="">
+                        </div>
+                        <ul class="footer-bottom-all__list">
+                            <li class="footer-bottom-all__list--item">
+                                <a href="" class="footer-bottom-all__list--item-link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer-bottom-all__list--item">
+                                <a href="" class="footer-bottom-all__list--item-link">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="footer-bottom-all__list--item">
+                                <a href="" class="footer-bottom-all__list--item-link">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="footer-bottom-all__list--item">
+                                <a href="" class="footer-bottom-all__list--item-link item-twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
+        <button id="myBtn" title="Go to top">
+            <i class="fa fa-angle-up fa-3"></i>
+        </button>
+        <a rel="nofollow" href="https://zalo.me/0937498868" class="cta-action-text" target="_blank">
+            <img alt="icon-zalo" class="icon-zalo" src="https://homegroup.vn/wp-content/themes/kienthuc/assets/images/zalo.png">
+        </a>
+        <div class="hotline mm-page mm-slideout" id="mm-0">
+            <div id="phonering-alo-phoneIcon" class="phonering-alo-phone phonering-alo-green phonering-alo-show">
+                <div class="phonering-alo-ph-img-circle">
+                    <a class="pps-btn-img " title="Liên hệ" href="tel:1800646426"> <img src="./images/icon/index/tải xuống.png" alt="Liên hệ" width="50" class="img-responsive"> </a>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="./javascript/main.js"></script>
 </body>
 </html>

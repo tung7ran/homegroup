@@ -1,0 +1,140 @@
+.news-banner{
+    background-image: url(../images/furnitune_design/background-banner-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 22.8rem;
+    &-title{
+        padding-top: 4.8rem;
+        font-size: 4.5rem;
+        color: $color-white;
+        text-align: center;
+        text-transform: uppercase;
+        min-height: 10rem;
+    }
+}
+.news-heading{
+    text-align: center;
+    margin-top: 2.8rem;
+    &-home{
+    position: relative;
+    line-height: 3rem;
+        a{
+            font-size: 2rem;
+            color: $color-black;
+            font-weight: 300;
+        }
+        span{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    &-home::before{
+        content: "";
+        width: 10rem;
+        height: 0.2rem;
+        background-color: $color-furniture-heading;
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+.news-design{
+    &-title{
+        margin-bottom: 2rem;
+        &__text{
+            font-size: 3.6rem;
+            font-weight: 600;
+            text-transform:uppercase;
+        }
+    }
+    &-image{
+        height: 41.2rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    &-heading{
+        &__text{
+            font-size: 4.8rem;
+            color: $color-black;
+            text-transform: uppercase;
+            line-height: 6rem;
+            display: block;
+            margin-bottom: 1.5rem;
+        }
+    }
+    &-sub{
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 3rem;
+    }
+
+    &-wrap{
+        margin-top: 4rem;
+        max-width: 140rem;
+        &__image{
+            // display: block;
+            // width: 38.8rem;
+            // height: auto;
+        }
+        &__title{
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            &--link{
+                font-size: 2.4rem;
+                font-weight: 600;
+                line-height: 3rem;
+                color: $color-black;
+            }
+        }
+        &__describe{
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+            &--text{
+                font-size: 1.8rem;
+                line-height: 3rem;
+            }
+        }
+        &__more{
+            margin-top: 2rem;
+            &--btn{
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: $color-black;
+            }
+            &--icon{
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+    }
+    &-pagenavi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+        &__one{
+            line-height: 3rem;
+            font-size: 2rem;
+            border-bottom: 2.5px solid $color-black;
+            width: 2rem;
+            text-align: center;
+        }
+        &__two{
+            line-height: 3rem;
+            font-size: 2rem;
+            color: $color-black;
+            padding: 0 2rem;
+        }
+        .fa-chevron-right{
+            font-size: 1.2rem;
+            color: $color-black;
+        }
+    }
+}

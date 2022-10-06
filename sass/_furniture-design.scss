@@ -1,0 +1,362 @@
+.furniture-banner{
+    background-image: url(../images/furnitune_design/background-banner-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 22.8rem;
+    &-title{
+        padding-top: 4.8rem;
+        font-size: 4.5rem;
+        color: $color-white;
+        text-align: center;
+        text-transform: uppercase;
+        min-height: 10rem;
+    }
+    &-describe{
+        text-align: center;
+        font-size: 2.8rem;
+        color: $color-white;
+        line-height: 4rem;
+        font-weight: 300;
+    }
+}
+.furniture-heading{
+    text-align: center;
+    margin-top: 2.8rem;
+    &-home{
+    position: relative;
+    line-height: 3rem;
+        a{
+            font-size: 2rem;
+            color: $color-black;
+            font-weight: 300;
+        }
+        span{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    &-home::before{
+        content: "";
+        width: 10rem;
+        height: 0.2rem;
+        background-color: $color-furniture-heading;
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+.furniture-care{
+    &-heading{
+        text-align: center;
+        &__text1{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            line-height: 10rem;
+        }
+        &__text2{
+            font-size: 3.6rem;
+            font-weight: 300;
+        }
+        &__text3{
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            font-size: 3.6rem;
+            font-weight: 300;
+        }
+    }
+    &-hover{
+        &__image{
+            position: relative;
+            display: block;
+            height: 30rem;
+            margin: 1.5rem 0;
+            overflow: hidden;
+        }
+        &__image{
+            img{
+                transition: all 2s;
+                width: 100%;
+                height:100%;
+            }
+        }
+        .furniture-care-hover__image:hover img{
+            transform: scale(1.5); 
+        }
+        &__describe{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: $color-white;
+            background-color: $color-background-service;
+            margin: 0 1.5rem;
+            &--text{
+                position: absolute;
+                bottom: 1.5rem;
+                right: 0;
+                left: 0;
+                text-align: center;
+                font-size: 3rem;
+                text-transform: uppercase;
+                color: $color-funiture-care;
+                background: $color-background-service;
+                padding: 2rem 0;
+                &-name{
+                    float: right;
+                    padding-right: 3rem;
+                }
+            }
+        }
+    }    
+}
+
+.furnitutre-refer{
+    margin-top: 6rem;
+    &-heading{
+        text-align: center;
+        &__text1{
+            font-size: 4.8rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: 0.1rem;
+            line-height: 8rem;
+        }
+        &__text2{
+            line-height: 6rem;
+            font-size: 4.2rem;
+            text-transform: uppercase;
+            margin-bottom: 6rem;
+        }
+    }
+    .furnitune-refer-image{
+        background-image: url(../images/furnitune_design/background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 97rem;
+        position: relative;
+    }
+    .furnitune-refer-info{
+        position: absolute;
+        width: 80rem;
+        background-color: $color-white;
+        left: 36rem;
+        top: 10rem;
+        &__form{
+            &--text1{
+                margin-top: 5rem;
+                text-align: center;
+                font-size: 3.6rem;
+                text-transform: uppercase;
+                font-weight: 300;
+                line-height: 8rem;
+            }
+            &--text2{
+                text-align: center;
+                font-size: 3.6rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                min-height: 8rem;
+                line-height: 4rem;
+            }
+            &--item1{
+                display: grid;
+                padding: 0 1rem;
+                &-input{
+                    width: 100%;
+                    font-size: 2.4rem;
+                    padding-left: 1.5rem;
+                    outline: none;
+                }
+                &-span{
+                    text-align: center;
+                    color: $color-funiture-care-refer;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    line-height: 2rem;
+                }
+            }
+            &--item2{
+                display: flex;
+                margin-top: 3rem;
+                margin-bottom: 2rem;
+                &-Specifically{
+                    display: grid;
+                    padding: 0 1rem;
+                    &-label{
+                        font-size: 2.4rem;
+                        margin-bottom: 1.5rem;
+                        font-weight: 300;
+                    }
+                    &-input{
+                        width: 100%;
+                        font-size: 2.4rem;
+                        padding-left: 2.5rem;
+                        outline: none;
+                    }
+                }
+            }
+            &--item3{
+                display: grid;
+                padding: 0 1rem;
+                &-name{
+                    width: 100%;
+                    font-size: 2.4rem;
+                    padding-left: 2.5rem;
+                    outline: none;
+                }
+                &-text{
+                    text-align: center;
+                    color: $color-funiture-care-refer;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    line-height: 2rem;
+                }
+            }
+            &--item4{
+                display: grid;
+                padding: 0 1rem;
+                margin-top: 3rem;
+                &-phone{
+                    width: 100%;
+                    font-size: 2.4rem;
+                    padding-left: 2.5rem;
+                    outline: none;
+                    margin-bottom: 2rem;
+                }
+                &-email{
+                    width: 100%;
+                    font-size: 2.4rem;
+                    padding-left: 2.5rem;
+                    outline: none;
+                    margin-bottom: 2rem;
+                }
+            }
+            &--item5{
+                text-align: center;
+                &-submit{
+                    background-color: $color-black;
+                    color: $color-header-hover;
+                    width: 21rem;
+                    border: none;
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                }
+            }
+            &--item6{
+                margin-top: 4rem;
+                margin-bottom: 8rem;
+                text-align: center;
+                &-text{
+                    border: 2px solid $color-header-hover;
+                    font-size: 1.4rem;
+                    padding: 1rem 16rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.furniture-procedure{
+    margin-top: 6rem;
+    position: relative;
+    &-heading{
+        margin-bottom: 4.5rem;
+        text-align: center;
+        &__text1{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        &__text2{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            line-height: 6rem;
+        }
+    }
+    &-image{
+        position: relative;
+        margin-bottom: 10rem;
+        padding-bottom: 8rem;
+    }
+    &-circle{
+        width: 20%;
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 21rem;
+    }
+    &-image::after{
+        content: "";
+        width: 10rem;
+        height: 0.2rem;
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: 0;
+    }
+}
+
+.furniture-parameter{
+    .furniture-parameter-image{
+        background-image: url(../images/furnitune_design/background-1.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 22.8rem;
+    }
+    .counter-container{
+        margin-top: 9rem;
+        &-all{
+            display: flex;
+        }
+        .counter{
+            font-size: 7.2rem;
+            color: $color-furniture-parameter;
+            min-height: 5rem;
+        }
+        .plus{
+            font-size: 7.2rem;
+            color: $color-furniture-parameter;
+        }
+        .content{
+            font-size: 2.2rem;
+            margin-top: 3rem;
+            color: $color-header-boxshadow;
+        }
+    }
+    &-button{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        text-align: center;
+        &__more{
+            font-size: 2rem;
+            color: $color-black;
+            padding: 1rem 4rem;
+            border: 1px solid $color-black;
+            font-weight: 600;
+        }
+    }
+}
+

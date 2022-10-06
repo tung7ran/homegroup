@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeGroup</title>
+    <!-- Reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Fonts Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- slick.css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- link css -->
+    <link rel="stylesheet" href="./sass/main.css">
+</head>
+<body>
+    <div class="wapper">
+        <header class="header">
+            <div class="header-menu">
+                <div class="container">
+                    <div class="header-menu-all">
+                        <a href="" class="header-menu-all__image">
+                            <img src="./images/header/logo.png" alt="">
+                        </a>
+                        <ul class="header-menu-all__list">
+                            <li class="header-menu-all__list--item item-card">
+                                <a href="" class="header-menu-all__list--item-link">
+                                    THIẾT KẾ NỘI THẤT 
+                                </a>
+                                <i class="fa-solid fa-chevron-down"></i>
+                                <ul class="tab-sub">
+                                    <li class="tab-sub-list">
+                                        <a href="" class="tab-sub-list__link">
+                                            NỘI THẤT CHUNG CƯ
+                                        </a>
+                                    </li>
+                                    <li class="tab-sub-list">
+                                        <a href="" class="tab-sub-list__link">
+                                            NỘI THẤT NHÀ PHỐ
+                                        </a>
+                                    </li>
+                                    <li class="tab-sub-list">
+                                        <a href="" class="tab-sub-list__link">
+                                            NỘI THẤT BIỆT THỰ
+                                        </a>
+                                    </li>
+                                    <li class="tab-sub-list">
+                                        <a href="" class="tab-sub-list__link">
+                                            NỘI THẤT VĂN PHÒNG
+                                        </a>
+                                    </li>
+                                    <li class="tab-sub-list">
+                                        <a href="" class="tab-sub-list__link">
+                                            NỘI THẤT NHÀ HÀNG
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header-menu-all__list--item">
+                                <a href="" class="header-menu-all__list--item-link">
+                                    SẢN XUẤT NỘI THẤT
+                                </a>
+                            </li>
+                            <li class="header-menu-all__list--item">
+                                <a href="" class="header-menu-all__list--item-link">
+                                    DỰ ÁN
+                                </a>
+                            </li>
+                            <li class="header-menu-all__list--item">
+                                <a href="" class="header-menu-all__list--item-link">
+                                    GIỚI THIỆU
+                                </a>
+                            </li>
+                            <li class="header-menu-all__list--item">
+                                <a href="" class="header-menu-all__list--item-link">
+                                    TIN TỨC
+                                </a>
+                            </li>
+                            <li class="header-menu-all__list--item">
+                                <a href="" class="header-menu-all__list--item-link">
+                                    VIDEOS
+                                </a>
+                            </li>
+                            <li class="header-menu-all__list--item none-right">
+                                <a href="" class="header-menu-all__list--item-link">
+                                    LIÊN HỆ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="news-banner">
+                <div class="container">
+                    <div class="news-banner-title">TIN TỨC</div>
+                    <div class="gold-container">
+                        <input id="gold-toggle" type="checkbox">
+                        <label class="gold-btn" for="gold-toggle"> TƯ VẤN TỪ CHUYÊN GIA </label> 
+                        <label class="gold-backdrop" for="gold-toggle"></label>
+                        <div class="gold-content">
+                          <label class="gold-close" for="gold-toggle">&#x2715;</label>
+                          <label for="" class="gold-title-text">TƯ VẤN LIÊN HỆ BÁO GIÁ</label>
+                            <form action="" class="gold-form">
+                                <input type="text" placeholder="Họ và tên">
+                                <input type="text" placeholder="Email">
+                                <input type="number" placeholder="Số điện thoại">
+                                <select id="cars" class="gold-seclect">
+                                    <option value="">Chủ doanh nghiệp</option>
+                                    <option value="">Cá nhân</option>
+                                    <option value="">Quản lý Marketing</option>
+                                    <option value="">Quản lý IT</option>
+                                    <option value="">Khác</option>
+                                  </select>
+                                  <label for="" class="gold-seclect-label">Homegroup gọi cho bạn khi nào thì phù hợp?</label>
+                                <input type="date" name="time-start" id="">
+                                <input type="submit" class="gold-form-btn" for="gold-toggle" value="Yêu cầu tư vấn"></input>   
+                            </form>
+                        </div>          
+                    </div>
+                </div>
+            </div>
+            <div class="news-heading">
+                <div class="news-heading-home">
+                    <a href="">Trang chủ /</a>
+                    <span> Tin tức</span>
+                </div>
+            </div>
+
+            <section class="news-design">
+                <div class="container">
+                    <div class="news-design-title">
+                        <h1 class="news-design-title__text">TIN TỨC</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="news-design-image">
+                            <img src="./images/news/phongcach-congnghiep-homegroup1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="news-design-heading">
+                            <a href="" class="news-design-heading__text">THIẾT KẾ VĂN PHÒNG THEO PHONG CÁCH CÔNG NGHIỆP INDUSTRIAL</a>
+                        </div>
+                        <span class="news-design-sub">Phong cách thiết kế văn phòng là một trong những phương thức mà doanh nghiệp dùng để truyền tải chất riêng, phong cách của mình tới đối tác, khách hàng. Có nhiều phong cách thiết kế như phong cách tối giản, phong cách công nghiệp, phong cách xanh, phong cách cao cấp,…</span>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/thiet-ke-noi-that-van-phong-phong-cach-toi-gian-homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Thiết kế văn phòng theo phong cách tối giãn Minimalism</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Văn phòng tối giản Minimalism là gì? Minimalism nghĩa là càng đơn giản càng tốt, và trong thiết kế văn phòng hiện nay, không gian nội thất càng đơn giản càng tiết kiệm và có khả năng tăng hiệu quả công việc.
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/thiet-ke-van-phong-mo-homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Thiết kế văn phòng theo phong cách không gian mở</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Trong thời đại ngày nay, Văn phòng không gian mở hiện đang được nhiều công ty áp dụng để bố trí không gian làm việc cho nhân viên.
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/phong-cach-eco-homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Thiết kế văn phòng theo phong cách ECO gần gũi với thiên nhiên</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Tốc độ đô thị hóa chóng mặt làm cho diện tích cây xanh bị hạn chế. Điều này có thể làm ảnh hưởng đến sức khỏe và tâm lý con người.
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/mau-nha-hang-dong-que-nen-homegroup.png" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Thiết kế nhà hàng theo phong cách truyền thống, đồng quê</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Ngày nay trong cuộc sống hiện đại, kinh doanh nhà hàng đang ngày càng trở nên phổ biến với nhiều phong cách thiết kế nội thất khác nhau.
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/nha-hang-phong-cach-co-dien-noithat-homegroup-1.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Thiết kế nhà hàng theo phong cách cổ điển</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Thiết kế nhà hàng phong cách cổ điển là một trong những lối thiết kế không gian kinh doanh sang trọng, độc đáo và xa hoa bậc nhất trên thị trường hiện nay. Vậy phong cách này nó có những đặc điểm gì?
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/nha-hang-phong-cach-chau-au-noithat-homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Thiết kế nhà hàng theo phong cách Châu Âu</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Thiết kế nhà hàng theo phong cách Châu Âu hiện nay khá được thịnh hành, nhưng đây cũng là một phong cách thiết kế nhà hàng không phải áp dụng được cho tất cả các nhà hàng.
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/dichvuthietke-homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Thiết kế nội thất có thật sự cần thiết?</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Trong 10 năm trở lại đây, nhu cầu thiết kế nội thất không những ở các thành phố lớn mà cả ở những vùng nông thôn đã và đang ngày càng trở nên phổ biến.
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/thiet_ke_noi_that_nha_hang_klk.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Thiết kế nhà hàng theo phong cách hiện đại</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Xu hướng thiết kế nhà hàng phong cách hiện đại đang phát triển mạnh mẽ hiện nay. Những nhà hàng này mang đến sự trẻ trung năng động phù hợp với nhiều đối tượng khách hàng.
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/giatrinhan-duoc-homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Dịch vụ thiết kế nội thất cung cấp cho bạn những gì?</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Khi sử dụng dịch vụ thiết kế nội thất, bạn sẽ nhận được những giá trị sau:
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/luachon-homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Những tiêu chí giúp lựa chọn đơn vị thiết kế thi công nội thất uy tín?</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Khi tiến hành chọn lựa đơn vị thiết kế thi công nội thất, bạn cần chú ý những điều sau: Xem xét kinh nghiệm cũng như hồ sơ năng lực của công ty. Tham khảo chất lượng và tính thẩm mỹ của các dự án mà công ty đã thực hiện. Xem xét năng […]
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/chi_phi-thietke.homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Chi phí thiết kế – Thi công nội thất được tính dựa trên yếu tố nào?</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Chi phí thiết kế – thi công nội thất sẽ được tính dựa trên một số yếu tố sau: Diện tích thi công. Vị trí nhà ở. Ý tưởng thiết kế được chọn. Phong cách thiết kế. Nội thất sử dụng. Mức giá vật liệu, nhân công trên thị trường tại thời điểm hiện […]
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="news-design-wrap">
+                                <a href="" class="news-design-wrap__image">
+                                    <img src="./images/news/cac-loai-go.homegroup.jpg" alt="">
+                                </a>
+                                <div class="news-design-wrap__title">
+                                    <a href="" class="news-design-wrap__title--link">Gỗ dùng trong nội thất được chia làm mấy loại?</a>
+                                </div>
+                                <div class="news-design-wrap__describe">
+                                    <span class="news-design-wrap__describe--text">
+                                        Hiện nay, trên thị trường có 2 nhóm gỗ cơ bản dùng để tạo nên đồ dùng nội thất, gồm có: Gỗ tự nhiên và gỗ công nghiệp. Từ hai nhóm này, chúng ta có nhiều lựa chọn chất gỗ khác nhau theo nhu cầu sử dụng như: Gỗ tự nhiên: Gỗ Sồi, Xoan […]
+                                    </span>
+                                </div>
+                                <div class="news-design-wrap__more">
+                                    <a href="" class="news-design-wrap__more--btn">XEM THÊM</a>
+                                    <i class="fa-solid fa-plus news-design-wrap__more--icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-design-pagenavi">
+                        <span class="news-design-pagenavi__one">1</span>
+                        <a href="" class="news-design-pagenavi__two">2</a>
+                        <a href="">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row footer-top-all">
+                        <div class="contact-footer-top email">
+                            <div class="contact-footer-top__icon">
+                                <img src="./images/icon/footer/icon-email.png" alt="email">
+                            </div>
+                            <span class="contact-footer-top__text">Email:</span>
+                            <a class="contact-footer-top__link" href="mailto:homegroup.jsc@gmail.com">homegroup.jsc@gmail.com</a>
+                        </div>
+                        <div class="contact-footer-top phone">
+                            <div class="contact-footer-top__icon--phone">
+                                <img src="./images/icon/footer/icon-phone.png" alt="email">
+                            </div>
+                            <span class="contact-footer-top__text">Hotline miễn cước:</span>
+                            <a class="contact-footer-top__link" href="tel:1800 646426"> 1800 646426</a>
+                        </div>
+                        <div class="contact-footer-top chat">
+                            <div class="contact-footer-top__icon">
+                                <img src="./images/icon/footer/icon-chat.png" alt="email">
+                            </div>
+                            <a class="contact-footer-top__link" href="https://zalo.me/0937498868">Chat Online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-between">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <div class="footer-between-all">
+                                <div class="footer-between-all__title">
+                                    <h3 class="footer-between-all__title--text">Dịch vụ HomeGroup</h3>
+                                </div>
+                                <ul class="footer-between-all__list">
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link" class="footer-between-all__list--item-link">
+                                            Thiết kế chung cư
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thiết kế nhà phố
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thiết kế biệt thự
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thiết kế văn phòng
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thiết kế nhà hàng
+                                        </a>
+                                    </li>
+                                    <li class="footer-between-all__list--item">
+                                        <a href="" class="footer-between-all__list--item-link">
+                                            Thi công nội thất
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div  class="col-lg-2">
+                            <div class="footer-between-all__title">
+                                <h3 class="footer-between-all__title--text">Nội dung tham khảo</h3>
+                            </div>
+                            <ul class="footer-between-all__list">
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link" class="footer-between-all__list--item-link">
+                                        Dự án
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Giới thiệu
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Chính sách bảo mật
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Chính sách bán hàng
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Tin tức
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Videos
+                                    </a>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <a href=""  class="footer-between-all__list--item-link">
+                                        Liên hệ
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4">
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwww.homegroup.vn&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                        <div class="col-lg-4">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/rSitEjFF4d4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-lg-6 footer-title-contact">
+                            <div class="footer-between-all__title">
+                                <h3 class="footer-between-all__title--text">LIÊN HỆ</h3>
+                            </div>
+                            <ul class="footer-between-all__list">
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">Hotline miễn cước:<a href="" class="footer-between-all__list--item-bold"> 1800 646426</a></p>
+                                </li> 
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">VP Hà Nội :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Tầng 6 Toà nhà Sannam Building - 78 Duy Tân - Cầu Giấy - Hà Nội</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">VP Hồ Chí Minh :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">18 Phan Văn Trị – Phường 10 – Quận Gò Vấp – TP Hồ Chí Minh</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">VP Hải Phòng :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Số 16 – 08 Hanmata VinHome Hải Phòng</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">VP Thanh Hóa :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Số HH22 đường Hoa Hồng - KĐT VinHomes Star City - Thanh Hóa</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 footer-title-contact">
+                            <ul class="footer-between-all__list">
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">Xưởng sản xuất Miền Bắc :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Đội 1 Cao Sơn - Tiên Phương - Chương Mỹ - Hà Nội</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <p class="footer-between-all__list--item-white">Xưởng sản xuất Miền Nam :</p>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Đường Nguyễn Xiển - Khu phố 8 - phường Long Bình - Biên Hoà - Đồng Nai</span>
+                                </li>
+                                <li class="footer-between-all__list--item">
+                                    <span class="footer-between-all__list--item-link">Số ĐKKD - 0106776554 Được cấp bởi Sở KH&ĐT TP Hà Nội</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-all">
+                        <div class="footer-bottom-all__title">Website thuộc về Công ty Cổ phần Xây dựng và Nội thất HomeGroup</div>
+                        <div class="footer-bottom-all__image">
+                            <img src="./images/footer/logo-bct.png" alt="">
+                        </div>
+                        <ul class="footer-bottom-all__list">
+                            <li class="footer-bottom-all__list--item">
+                                <a href="" class="footer-bottom-all__list--item-link">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="footer-bottom-all__list--item">
+                                <a href="" class="footer-bottom-all__list--item-link">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+                            </li>
+                            <li class="footer-bottom-all__list--item">
+                                <a href="" class="footer-bottom-all__list--item-link">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="footer-bottom-all__list--item">
+                                <a href="" class="footer-bottom-all__list--item-link item-twitter">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js" ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" ></script>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>

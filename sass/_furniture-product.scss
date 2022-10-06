@@ -1,0 +1,358 @@
+.product-banner{
+    background-image: url(../images/furnitune_design/background-banner-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 22.8rem;
+    &-title{
+        padding-top: 4.8rem;
+        font-size: 4.5rem;
+        color: $color-white;
+        text-align: center;
+        text-transform: uppercase;
+        min-height: 10rem;
+    }
+    &-describe{
+        text-align: center;
+        font-size: 2.8rem;
+        color: $color-white;
+        line-height: 4rem;
+        font-weight: 300;
+    }
+}
+.product-heading{
+    text-align: center;
+    margin-top: 2.8rem;
+    &-home{
+    position: relative;
+    line-height: 3rem;
+        a{
+            font-size: 2rem;
+            color: $color-black;
+            font-weight: 300;
+        }
+        span{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    &-home::before{
+        content: "";
+        width: 10rem;
+        height: 0.2rem;
+        background-color: $color-furniture-heading;
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+}
+.product-construction{
+    margin-top: 3rem;
+    margin-bottom:2rem ;
+    &-title{
+        text-align: center;
+        &__text1{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        &__text2{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-top: 1rem;
+            margin-bottom: 6rem;
+        }
+    }
+    &-heading{
+        text-align: center;
+        &__text{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+    &-list{
+        &__item{
+            font-size: 2rem;
+            margin-top: 1.5rem;
+            line-height: 3rem;
+            list-style-image: url(../images/icon/furnitune_product/icon-list-address.png) ;
+            font-weight: 500;
+        }
+    }
+    &-content{
+        &__tick{
+            display: flex;
+            align-items: flex-start;
+            width: 7.3rem;
+            height: auto;
+            margin-bottom: 2rem;
+            &--text{
+                display: flex;
+                flex-direction: column;
+                &-title{
+                font-size: 2rem;
+                width: 30rem;
+                padding-left: 1rem;
+                line-height: 3rem;
+                }
+                &-sub{
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    padding-left: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    &-circle{
+        background-image: url(../images/furnitune_product/background.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        -o-object-fit: cover;
+        object-fit: cover;
+        height: 76rem;
+    }
+    .product-construction-all{
+        padding-top:6rem;
+    }
+}
+.product-workshop{
+    .product-workshop-tab{
+        .product-workshop-tab__list{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+           li {
+            font-size: 2.2rem;
+              padding: .75rem 1.5rem;
+              cursor: pointer;
+              &.active {
+                color: $color-black;
+                font-size: 2.2rem;
+                font-weight: 600;
+                position: relative;
+              }
+              &.active::after{
+                content: "";
+                width: 10rem;
+                height: 0.3rem;
+                background-color: #000;
+                position: absolute;
+                left: 2rem;
+                top: -1rem;
+              }
+           }
+           .border-nav{
+            border-right: 2px solid $color-black;
+           }
+        }
+        .product-workshop-tab__body {
+           width: 100%;
+           .tab-data {
+              width: 100%;
+              padding: 1.5rem;
+              font-size: 18px;
+              line-height: 30px;
+              &:not(.active) { display: none; }
+           }
+           .product-workshop-tab__image{
+            padding-left: 1rem;
+           }
+        }
+    }
+}
+.product-price{
+    position: relative;
+    margin-top: 5.2rem;
+    margin-bottom: 11rem;
+    padding-left: 16rem;
+    padding-right: 16rem;
+    &-image__top{
+        width: 6.2rem;
+        position: absolute;
+        top: -1.2rem;
+        left: 15rem;
+    }
+    &-image__bottom{
+        width: 6.2rem;
+        position: absolute;
+        bottom: 1rem;
+        right: 16rem;
+    }
+    &-heading{
+        text-align: center;
+        font-size: 3.6rem;
+        text-transform: uppercase;
+        margin-bottom: 3.5rem;
+        font-weight: 600;
+    }
+    &-sub{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+        font-weight: 600;
+    }
+    &-describe{
+        text-align: center;
+        &__text{
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 2rem;
+            line-height: 3rem;
+        }
+    }
+}
+.product-gift{
+    .product-gift-image{
+    background-image: url(../images/furnitune_product/background\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 50rem;
+    }
+    .product-gift-image__box{
+        display: flex;
+        &--gift{
+            width: 11rem;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+        &--title{
+            padding-left: 2rem;
+            margin-top: 2rem;
+            &-text1{
+                font-size: 6.2rem;
+                text-transform: uppercase;
+                font-weight: 400;
+                color: $color-house;
+                line-height: 7rem;
+            }
+            &-text2{
+                font-size: 6.2rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $color-house;
+                line-height: 7rem;
+            }
+        }
+    }
+    .product-gift-image__list{
+        &--item{
+            font-size: 2.2rem;
+            color: $color-white;
+            margin-top: 4rem;
+            line-height: 2rem;
+            position: relative;
+        }
+        &--item::after{
+            position: absolute;
+            content: "";
+            width: 0.8rem;
+            height: 0.8rem;
+            background-color: $color-white;
+            left: -2rem;
+            top: 0.6rem;
+        }
+    }
+}
+.product-procedure{
+    margin-top: 10rem;
+    &-title{
+        text-align: center;
+        &__text1{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-weight: 300;
+        }
+        &__text2{
+            font-size: 3.6rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+    }
+    &-image{
+        margin-top:10rem;
+    }
+}
+
+.product-view{
+    padding: 0 1rem;
+    margin-top: 2rem;
+    &-title{
+      display: flex;
+      justify-content: space-between;
+      &__text{
+        &--one{
+          font-size: 3.6rem;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        &--two{
+          font-size: 3.6rem;
+          font-weight: 300; 
+          text-transform: uppercase;
+          line-height: 5rem;
+        }
+      }
+      &__project{
+        font-size: 7.8rem;
+        color: #d2d2d2;
+      }
+    }
+    &-box{
+        &__image{
+            height: 24rem;
+            width: 100%;
+            display: block;
+            position: relative;
+            margin: 1.5rem 0;
+        }
+        &__caption{
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background:$color-house-hover;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            &--text{
+                font-size: 2rem;
+                color: $color-house-title;
+                line-height: 2rem;
+                margin-top: 10rem;
+            }
+        }
+    }
+    .product-view-box:hover .product-view-box__caption{
+        display: block;
+        cursor: pointer;
+    }
+    &-more{
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+      a{
+        color: $color-black;
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 1.5rem 2rem;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid $color-black;
+      }
+    }
+}
+  

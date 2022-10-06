@@ -1,0 +1,139 @@
+.contact-banner{
+    background-image: url(../images/furnitune_design/background-banner-1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 22.8rem;
+    &-title{
+        padding-top: 4.8rem;
+        font-size: 4.5rem;
+        color: $color-white;
+        text-align: center;
+        text-transform: uppercase;
+        min-height: 10rem;
+    }
+}
+.contact-heading{
+    text-align: center;
+    margin-top: 2.8rem;
+    margin-bottom: 8rem;
+    &-home{
+    position: relative;
+    line-height: 3rem;
+        a{
+            font-size: 2rem;
+            color: $color-black;
+            font-weight: 300;
+        }
+        span{
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+    &-home::before{
+        content: "";
+        width: 10rem;
+        height: 0.2rem;
+        background-color: $color-furniture-heading;
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+.contact-wrap{
+    &-left{
+        &__title{
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 4.5rem;
+        }
+    }
+    &-list{
+        &__item{
+            font-size: 2rem;
+            font-weight: 600;
+            line-height: 2rem;
+            a{
+                color:$color-contact;
+            }
+        }
+        &__office{
+            margin: 1.6rem 0;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 2rem;
+            position: relative;
+        }
+        &__office::after{
+            content: "";
+            width: 0.8rem;
+            height: 0.8rem;
+            background-color: $color-black;
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            margin-left: -2rem;
+        }
+        &__address{
+            font-size: 1.8rem;
+            line-height: 2rem;
+        }
+    }
+    &-right{
+        text-align: center;
+        &__title{
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-bottom: 4.5rem;
+        }
+    }
+    &-form{
+        &__input{
+            font-size: 2.4rem;
+            padding-left: 3.5rem;
+            width: 100%;
+            margin-bottom: 3rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            outline: none;
+        }
+        &__text{
+            font-size: 2.4rem;
+            padding-left: 3.5rem;
+            width: 100%;
+            padding-top: 2rem;
+            outline: none;
+        }
+    }
+    &-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+        &__submit{
+            padding: 2.5rem 5rem;
+            font-size: 2.4rem;
+            background-color: $color-black;
+            border: 1px solid #000;
+            color: $color-white;
+            margin-right:1rem;
+        }
+        &__reset{
+            padding: 2.5rem 5rem;
+            font-size: 2.4rem;
+            background-color: $color-white;
+            border: 1px solid #000;
+        }
+    }
+}
+
+.contact-masp{
+    margin-top: 2rem;
+    height: 30rem;
+    margin-bottom: 0.5rem;
+}
