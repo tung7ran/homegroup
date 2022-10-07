@@ -116,47 +116,206 @@
             }
         }
     }
+    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
+        max-width: 100%;
+        width: 93%;
+        height: 45rem;
+    }
+    .gold-form .gold-seclect-label{
+        line-height: 2.4rem;
+    }
+    .gold-title-text{
+        font-size: 1.6rem;
+        margin: 1.2rem auto;
+        line-height: 2rem;
+    }
+    .gold-form input{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .gold-form .gold-seclect{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .gold-form .gold-form-btn{
+        margin: 2rem auto;
+        line-height: 2rem;
+    }
 }
 
 @include responsive_tablet{
+    .product-banner{
+        &-title{
+            padding-top: 2rem;
+            font-size: 2.6rem;
+            line-height: 4rem;
+            min-height: 5rem;
+        }
+        &-describe{
+            font-size: 2.6rem;
+        }
+    }
+    .product-construction{
+        &-title{
+            &__text1{
+                font-size: 2.6rem;
+            } 
+            &__text2{
+                font-size: 2.6rem;
+            }   
+        }
+    }
+    .product-construction .product-construction-all{
+        padding-top: 1rem;
+    }
+    .product-construction-circle{
+        background-image: none;
+    }
+    .product-construction-heading__text{
+        font-size: 2.6rem;
+    }
     .product-construction-list{
         padding: 0 3rem;
         margin: 2rem 0;
     }
+    .product-construction-content__tick--text-title{
+        width: 37rem;
+    }
     .product-workshop{
-        margin-top: 16rem;
+        margin-top: 55rem;
     }
-    .product-price{
-        padding-left: 8rem;
-        padding-right: 8rem;
-    }
-    .product-price-heading{
-        font-size: 3rem;
+    .product-workshop .product-workshop-tab .product-workshop-tab__list li{
         line-height: 3rem;
     }
-    .product-price-image__top{
-        left: 4rem;
+    .product-price{
+        padding: 0rem 1rem;
+        margin: 3rem 0;
+        &-heading{
+            font-size: 2.6rem;
+        }
+        &-sub{
+            text-align: center;
+        }
+        &-image__top{
+            display: none;
+        }
+        &-image__bottom{
+            display: none;
+        }
     }
-    .product-price-image__bottom{
-        right: 4rem;
+    .product-gift{
+        .product-gift-image__box--title-text1{
+            font-size: 4rem;
+        }
+        .product-gift-image__box--title-text2{
+            font-size: 4rem;
+        }
+        .product-gift-image__list{
+            padding: 0 2rem;
+        }
+        .product-gift-image__list--item{
+            margin-top: 1rem;
+            font-size: 2rem;
+            line-height: 3rem;
+        }
     }
-    .product-gift .product-gift-image__box--title-text1{
-        font-size: 5rem;
+    .product-procedure{
+        margin-top: 3rem;
+        &-title{
+            &__text1{
+                font-size: 2.6rem;
+            }
+        }
+        &-image{
+            margin-top: 3rem;
+        }
     }
-    .product-gift .product-gift-image__box--title-text2{
-        font-size: 5.2rem;
+    .product-view{
+        &-title{
+            text-align: center;
+            &__text{
+                &--one{
+                    font-size: 2.6rem;
+                }
+                &--two{
+                    font-size: 2.6rem;
+                }
+            }
+            &__project{
+                display: none;
+            }
+        }
     }
-    .product-gift-image__list{
-        padding: 0 3rem;
+    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
+        max-width: 100%;
+        width: 93%;
+        height: 45rem;
     }
-    .product-view-title{
-        display: block;
-        text-align: center;
+    .gold-form .gold-seclect-label{
+        line-height: 2.4rem;
+    }
+    .gold-title-text{
+        font-size: 1.6rem;
+        margin: 1.2rem auto;
+        line-height: 2rem;
+    }
+    .gold-form input{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .gold-form .gold-seclect{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .gold-form .gold-form-btn{
+        margin: 2rem auto;
+        line-height: 2rem;
     }
 }
 
 @include responsive_pclow{
+    .product-construction{
+        .product-construction-all{
+            margin-top: 1rem;
+        }
+        .product-construction-list{
+            padding: 0 1rem;
+            margin: 2rem 0rem;
+        }
+        .product-construction-title__text2{
+            margin-bottom: 1rem;
+        }
+    }
+    .product-workshop{
+        margin-top: 10rem;
+    }
+    .product-price{
+        padding: 0 1rem;
+        &-image__top{
+            left: 3rem;
+        }
+        &-heading{
+            line-height: 3rem;
+            text-align: center;
+        }
+        &-sub{
+            text-align: center;
+        }
+        &-image__bottom{
+            right: 3rem;
+        }
+    }
     .product-gift-image__list{
-        padding: 0 3rem;
+        padding: 0 2rem;
+    }
+    .product-gift .product-gift-image__list--item{
+        margin-top: 2rem;
+        line-height: 3rem;
+    }
+    .product-procedure{
+        margin-top: 5rem;
+        &-image{
+            margin-top: 5rem;
+        }
     }
 }

@@ -2,12 +2,31 @@
     .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
         max-width: 100%;
         width: 93%;
+        height: 45rem;
     }
     .gold-form .gold-seclect-label{
         line-height: 2.4rem;
     }
+    .gold-title-text{
+        font-size: 1.6rem;
+        margin: 1.2rem auto;
+        line-height: 2rem;
+    }
+    .gold-form input{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .gold-form .gold-seclect{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .gold-form .gold-form-btn{
+        margin: 2rem auto;
+        line-height: 2rem;
+    }
     .furniture-banner{
         &-title{
+            min-height: 5rem;
             padding-top: 2rem;
             font-size: 2.6rem;
             line-height: 4rem;
@@ -26,6 +45,13 @@
             &__text3{
                 font-size: 2.6rem;
             }
+        }
+        &-hover__describe--text{
+            font-size: 2.6rem;
+        }
+        &-hover__describe--text-name{
+            float: none;
+            padding-right: 0rem;
         }
     }
     .furnitutre-refer{
@@ -85,19 +111,141 @@
 }
 
 @include responsive_tablet{
+    .furniture-banner{
+        &-title{
+            min-height: 5rem;
+            padding-top: 2rem;
+            font-size: 2.6rem;
+            line-height: 2rem;
+        }
+    }
+    .furniture-care{
+        &-heading{
+            &__text1{
+                font-size: 2.6rem;
+            }
+            &__text2{
+                font-size: 2.6rem;
+            }
+            &__text3{
+                font-size: 2.6rem;
+            }
+        }
+        &-hover__describe--text{
+            font-size: 2.6rem;
+        }
+        &-hover__describe--text-name{
+            float: none;
+            padding-right: 0rem;
+        }
+    }
+    .furnitutre-refer{
+        margin-top: 2rem;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--text1{
+        font-size: 2.6rem;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--text2{
+        font-size: 2.6rem;
+    }
+    .furnitutre-refer-heading__text1{
+        font-size: 2.6rem;
+        line-height: 3rem;
+    }
+    .furnitutre-refer-heading__text1{
+        font-size: 2.6rem;
+    }
+    .furnitutre-refer-heading__text2{
+        font-size: 2.6rem;
+        margin-bottom: 2.6rem;
+    }
     .furnitutre-refer .furnitune-refer-info{
         left: 0rem;
     }
-    .furniture-parameter .counter-container .counter{
-        font-size: 5rem;
+    .furnitutre-refer .furnitune-refer-info__form--item2{
+        display: block;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--item2-Specifically{
+        margin: 2rem 0;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--item6-text{
+        padding: 1rem 3rem;
+    }
+    .furniture-parameter .furniture-parameter-image{
+        height: 78rem;
+    }
+    .furniture-parameter .counter-container-all{
+        display: flex;
+        justify-content: center;
     }
     .furniture-parameter .counter-container .content{
-        font-size: 1.8rem;
-        line-height: 2rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
     }
     .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
         max-width: 100%;
         width: 90%;
+        height: 50rem;
+    }
+    .gold-form .gold-seclect-label{
+        line-height: 2.4rem;
+    }
+    .gold-title-text{
+        font-size: 1.6rem;
+        margin: 1.2rem auto;
+        line-height: 2rem;
+    }
+    .gold-form input{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .gold-form .gold-seclect{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .gold-form .gold-form-btn{
+        margin: 2rem auto;
+        line-height: 2rem;
+    }
+    .furniture-banner{
+        &-title{
+            min-height: 5rem;
+            padding-top: 2rem;
+            font-size: 2.6rem;
+            line-height: 4rem;
+        }
     }
     
+}
+
+@include responsive_pclow{
+    .furnitutre-refer .furnitune-refer-info{
+        max-width: 100%;
+        width: 100%;
+        left: 0rem;
+    }
+    .footer-bottom-all__title{
+        line-height: 2.6rem;
+    }
+    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
+        max-width: 100%;
+        width: 80%;
+    }
+}
+
+@include responsive_pcmedium{
+    .furnitutre-refer .furnitune-refer-info{
+        max-width: 100%;
+        width: 100%;
+        left: 0rem;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--item2-Specifically-input{
+        padding-left: 5.5rem;
+    }
+
+    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
+        max-width: 100%;
+        width: 80%;
+    }
 }

@@ -7,11 +7,31 @@
             min-height: 6rem;
         }
     }
+    .news-design-heading{
+        padding: 0 1rem;
+    }
+    .news-design-image{
+        height: 28rem;
+    }
     .news-design-title__text{
         font-size: 2.6rem;
     }
     .news-design-heading__text{
         font-size: 2.6rem;
         line-height: 4rem;
+        text-align: center;
+    }
+}
+
+@include responsive_tablet{
+    .news-design-heading{
+        padding: 0 1rem;
+        &__text{
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+    .news-design-image{
+        height: 36rem;
     }
 }

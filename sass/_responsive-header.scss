@@ -1,5 +1,8 @@
 
 @include responsive_mobile{
+    .header{
+        height: 5rem;
+    }
     .header-menu-all{
         display: block;
         line-height: 4rem;
@@ -99,6 +102,9 @@
 }
 
 @include responsive_tablet{
+    .header{
+        height: 5rem;
+    }
     .header-menu-all{
         display: block;
         line-height: 4rem;
@@ -203,8 +209,20 @@
             display: block;
         }
         .checkbox-menu{
-                display: none;
+            display: none;
         }       
+    }
+    .header-menu-all{
+        line-height: 3.2rem;
+    }
+    .header-menu-all__list--item-link{
+        font-size: 1.4rem;
+    }
+}
+
+@include responsive_pcmedium{
+    .header-menu-all{
+        line-height: 3rem;
     }
 }
     

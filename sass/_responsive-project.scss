@@ -25,5 +25,37 @@
             line-height: 2rem;
         }
     }
-    
+}
+
+@include responsive_tablet{
+    .project-implementation{
+        margin-top: 2rem;
+        &-all{
+            text-align: center;
+            display: block;
+            &__heading--text1{
+                font-size: 2.6rem;
+            }
+            &__heading--text2{
+                font-size: 2.6rem;
+            }
+            &__option{
+                width: 100%;
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+
+@include responsive_pclow{
+    .project-implementation-hover__describe--text{
+        line-height: 2rem;
+    }
+}
+
+
+@include responsive_pcmedium{
+    .project-implementation-hover__describe--text{
+        line-height: 2rem;
+    }
 }
