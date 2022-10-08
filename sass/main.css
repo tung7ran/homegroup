@@ -986,8 +986,8 @@ navbar input[type=checkbox],
 
 .popup {
   position: fixed;
-  top: 8%;
-  left: 27%;
+  top: 20%;
+  left: 50%;
   transform: translateX(-50%);
   width: 60rem;
   height: 60rem;
@@ -1006,13 +1006,14 @@ navbar input[type=checkbox],
 .active + .popup {
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
 }
 
 .popup-title-text {
   font-size: 3rem;
   color: #000;
   line-height: 6rem;
+  display: flex;
+  justify-content: center;
 }
 
 .popup-form {
@@ -1051,125 +1052,6 @@ navbar input[type=checkbox],
   font-weight: 700;
 }
 .popup-form .popup-form-btn {
-  text-align: center;
-  width: 22rem;
-  background: #000;
-  line-height: 5rem;
-  color: #fff;
-  font-size: 2rem;
-  padding-left: 0;
-  margin: 5rem auto;
-  cursor: pointer;
-}
-
-.show-left {
-  position: absolute;
-  bottom: -10rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30rem;
-  height: 6rem;
-  background: #f1d52b;
-  color: #000;
-  border: 0;
-  border: 3px solid #000;
-  cursor: pointer;
-  font-size: 2rem;
-}
-
-.close-left {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 5rem;
-  height: 4rem;
-  color: #000;
-  cursor: pointer;
-  border: 0;
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-
-.mask-left {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.44);
-  z-index: 50;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.7s;
-}
-
-.popup-left {
-  position: fixed;
-  top: 34%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60rem;
-  height: 60rem;
-  background: #fae037;
-  z-index: 100;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5s ease-out;
-}
-
-.active {
-  visibility: visible;
-  opacity: 1;
-}
-
-.active + .popup-left {
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.popup-title-text__left {
-  font-size: 3rem;
-  color: #000;
-  line-height: 6rem;
-}
-
-.popup-form-left {
-  margin: 0 3rem;
-  display: flex;
-  flex-direction: column;
-}
-.popup-form-left input {
-  width: 100%;
-  height: 5rem;
-  padding-left: 4rem;
-  border: 0;
-  color: #000;
-  font-size: 2.4rem;
-  margin: 1rem 0;
-  outline: none;
-  line-height: 5rem;
-}
-.popup-form-left .popup-seclect-left {
-  width: 100%;
-  height: 5rem;
-  padding-left: 4rem;
-  border: 0;
-  color: #000;
-  font-size: 2.4rem;
-  margin: 1rem 0;
-  outline: none;
-  line-height: 5rem;
-}
-.popup-form-left .popup-seclect-left-label {
-  text-align: left;
-  font-size: 2rem;
-  padding-left: 2rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-}
-.popup-form-left .popup-form-btn__left {
   text-align: center;
   width: 22rem;
   background: #000;
@@ -3586,6 +3468,9 @@ navbar input[type=checkbox],
   }
 }
 @media (min-width: 769px) and (max-width: 991px) {
+  .info h3 {
+    padding-top: 0rem;
+  }
   .question-content-list {
     padding: 0 2rem;
   }
@@ -3596,7 +3481,11 @@ navbar input[type=checkbox],
     padding-left: 0%;
   }
   .Modern-Slider .img-fill h3 {
-    padding-top: 6rem;
+    padding-top: 0rem;
+    font-size: 3rem;
+  }
+  .Modern-Slider .img-fill p {
+    font-size: 1.2rem;
   }
   .home-content-image__bottom {
     right: 2rem;
@@ -3634,6 +3523,11 @@ navbar input[type=checkbox],
   .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content {
     max-width: 100%;
     width: 90%;
+  }
+  .show {
+    width: 20rem;
+    height: 3.5rem;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1366px) {

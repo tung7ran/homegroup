@@ -202,8 +202,8 @@
 // Modal
 .popup{
   position: fixed;
-  top: 8%;
-  left: 27%;
+  top: 20%;
+  left: 50%;
   transform: translateX(-50%);
   width: 60rem;
   height: 60rem;
@@ -222,13 +222,14 @@
 .active + .popup{
   visibility: visible;
   opacity: 1;
-  transform: translateY(0);
 }
 
 .popup-title-text{
   font-size: 3rem;
   color: $color-black;
   line-height: 6rem;
+  display: flex;
+  justify-content: center;
 }
 
 .popup-form{
@@ -277,139 +278,6 @@
     cursor: pointer;
   }
 }
-
-.show-left{
-  position: absolute;
-  bottom: -10rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 30rem;
-  height: 6rem;
-  background: $color-header-hover;
-  color: $color-black;
-  border: 0;
-  border: 3px solid $color-black;
-  cursor: pointer;
-  font-size: 2rem;
-}
-
-// Close Button
-.close-left{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 5rem;
-  height: 4rem;
-  color: $color-black;
-  cursor: pointer;
-  border: 0;
-  font-size: 2.5rem;
-  font-weight: 500;
-}
-// The mask
-.mask-left{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background:rgb(0 0 0 / 44%);
-  z-index: 50;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.7s;
-}
-// Modal
-.popup-left{
-  position: fixed;
-  top: 34%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60rem;
-  height: 60rem;
-  background: $color-house;
-  z-index: 100;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.5s ease-out;
-}
-// Class Active
-.active{
-  visibility: visible;
-  opacity: 1;
-}
-// When active class is added, that affects the modal class
-.active + .popup-left{
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.popup-title-text__left{
-  font-size: 3rem;
-  color: $color-black;
-  line-height: 6rem;
-}
-
-.popup-form-left{
-  margin: 0 3rem;
-  display: flex;
-  flex-direction: column;
-  input{
-    width: 100%;
-    height: 5rem;
-    padding-left: 4rem;
-    border: 0;
-    color: $color-black;
-    font-size: 2.4rem;
-    margin: 1rem 0;
-    outline: none;
-    line-height: 5rem;
-  }
-  .popup-seclect-left{
-    width: 100%;
-    height: 5rem;
-    padding-left: 4rem;
-    border: 0;
-    color: $color-black;
-    font-size: 2.4rem;
-    margin: 1rem 0;
-    outline: none;
-    line-height: 5rem;
-    &-label{
-      text-align: left;
-      font-size: 2rem;
-      padding-left: 2rem;
-      margin-top: 1.5rem;
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-    }
-  }
-  .popup-form-btn__left {
-    text-align: center;
-    width: 22rem;
-    background: #000;
-    line-height: 5rem;
-    color: #fff;
-    font-size: 2rem;
-    padding-left: 0;
-    margin: 5rem auto;
-    cursor: pointer;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .home-content{
   position: relative;

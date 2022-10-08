@@ -305,6 +305,12 @@
 }
 
 @include responsive_pclow{
+    .info{
+        h3{
+            padding-top: 0rem;
+        }
+    }
+
     .question-content-list{
         padding: 0 2rem;
     }
@@ -315,7 +321,11 @@
         padding-left: 0%;
     }
     .Modern-Slider .img-fill h3{
-        padding-top: 6rem;
+        padding-top: 0rem;
+        font-size: 3rem;
+    }
+    .Modern-Slider .img-fill p{
+        font-size: 1.2rem;
     }
     .home-content-image__bottom{
         right: 2rem;
@@ -353,6 +363,11 @@
     .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content{
         max-width: 100%;
         width: 90%;
+    }
+    .show{
+        width: 20rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
     }
 }
 
