@@ -3670,12 +3670,16 @@ navbar input[type=checkbox],
     float: none;
     padding-right: 0rem;
   }
+  .furnitutre-refer {
+    margin-top: 0rem;
+  }
   .furnitutre-refer-heading {
     display: none;
   }
   .furnitutre-refer .furnitune-refer-info__form--text1,
 .furnitutre-refer .furnitune-refer-info__form--text2 {
     font-size: 2.6rem;
+    margin-top: 1rem;
   }
   .furnitutre-refer .furnitune-refer-info__form--item1-input {
     font-size: 2rem;
