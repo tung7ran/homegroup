@@ -33,3 +33,27 @@
         text-align: center;
     }
 }
+@include responsive_tablet{
+    .footer-between-all__list--item-link{
+        line-height: 2rem;
+    }
+    .footer-bottom{
+        height: 12rem;
+    }
+    .footer-bottom-all{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    }
+    .footer-bottom-all__list{
+        line-height: 3rem;
+    }
+    .footer-bottom-all__image{
+        margin: 0.5rem 4rem;
+    }
+    .footer-bottom-all__title{
+        line-height: 2rem;
+        font-size: 1.6rem;
+    }
+}

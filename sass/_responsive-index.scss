@@ -82,15 +82,25 @@
         &-right{
             padding: 0rem 0rem;
             &__amount--number{
-                font-size: 7rem;
+                font-size: 5rem;
+                line-height: 2rem;
             }
             &__title--text{
-                font-size: 3rem;
+                font-size: 2.6rem;
+                line-height: 3rem;
+                margin: 0rem 0;
             }
             &__describe--text{
                 font-size: 2.2rem;
             }
+            &__describe{
+                margin-top: 2rem;
+
+            }
         }
+    }
+    .modal-container{
+        margin: 1rem auto;
     }
     .believe-content {
         &-heading{
@@ -119,11 +129,30 @@
     }
     .modal-form .modal-seclect-label{
         line-height: 2.4rem;
+        font-size: 1.6rem;
+        margin: 0rem 0rem;
     }
-
     .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content{
         max-width: 100%;
         width: 93%;
+        height: 45rem;
+    }
+    .modal-title-text{
+        font-size: 1.6rem;
+        margin: 1.2rem auto;
+        line-height: 2rem;
+    }
+    .modal-form input{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .modal-form .modal-seclect{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .modal-form .modal-form-btn{
+        margin: 2rem auto;
+        line-height: 2rem;
     }
 }
 
@@ -180,7 +209,30 @@
             text-align: center;
         }
     }
+    .advise-content{
+        &-right{
+            padding: 0rem 0rem;
+            &__amount--number{
+                font-size: 5rem;
+                line-height: 2rem;
+            }
+            &__title--text{
+                font-size: 2.6rem;
+                line-height: 3rem;
+                margin: 0rem 0;
+            }
+            &__describe--text{
+                font-size: 2.2rem;
+            }
+            &__describe{
+                margin-top: 2rem;
 
+            }
+        }
+    }
+    .modal-container{
+        margin: 1rem auto;
+    }
     .house-content{
         height: 100%;
         margin-top: 10rem;
@@ -216,6 +268,25 @@
     .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content{
         max-width: 100%;
         width: 90%;
+        height: 50rem;
+    }
+
+    .modal-title-text{
+        font-size: 1.6rem;
+        margin: 1.2rem auto;
+        line-height: 2rem;
+    }
+    .modal-form input{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .modal-form .modal-seclect{
+        height: 3rem;
+        font-size: 1.6rem;
+    }
+    .modal-form .modal-form-btn{
+        margin: 2rem auto;
+        line-height: 2rem;
     }
 
     .question-content{
@@ -234,7 +305,133 @@
 }
 
 @include responsive_pclow{
+    .info{
+        h3{
+            padding-top: 0rem;
+        }
+    }
+
     .question-content-list{
         padding: 0 2rem;
+    }
+    .design-content-logo{
+        display: none;
+    }
+    .design-content-slider{
+        padding-left: 0%;
+    }
+    .Modern-Slider .img-fill h3{
+        padding-top: 0rem;
+        font-size: 3rem;
+    }
+    .Modern-Slider .img-fill p{
+        font-size: 1.2rem;
+    }
+    .home-content-image__bottom{
+        right: 2rem;
+    }
+    .advise-content{
+        margin-top: 26rem;
+    }
+    .advise-content-right__amount--number{
+        font-size: 7.7rem;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        line-height: 4rem;
+    }
+    .advise-content-right__title--text {
+        font-size: 2.6rem;
+        line-height: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .advise-content-right__describe {
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        text-align: center;
+    }
+    .advise-content-right__describe--text {
+        font-size: 2.6rem;
+        line-height: 4rem;
+    }
+    .modal-container{
+        margin: 2rem auto;
+    }
+    .question-content-list__item--link::before{
+        left: 1rem;
+    }
+    .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content{
+        max-width: 100%;
+        width: 90%;
+    }
+    .show{
+        width: 20rem;
+        height: 3.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@include responsive_pcmedium{
+    .Modern-Slider .img-fill h3{
+        padding-top: 6rem;
+    }
+    .home-content-image__bottom{
+        right: 2rem;
+    }
+    .service-content-describe__text--name{
+        font-size: 2rem;
+    }
+    .design-content{
+        margin-top: 3rem;
+        &-logo{
+            width: 30%;
+            left: 0;
+        }
+        &-slider{
+            padding-left: 29%;
+        }
+    }
+    .house-content-title__text--one{
+        font-size: 3.6rem;
+    }
+    .house-content-title__text--two{
+        font-size: 3.6rem;
+    }
+    .advise-content{
+        &-right{
+            &__amount{
+                &--number{
+                    font-size: 6rem;
+                    line-height: 3rem;
+                }
+            }
+            &__title{
+                &--text{
+                    font-size: 2.6rem;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+            &__describe{
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                &--text{
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+    .modal-container{
+        margin: 2rem auto;
+    }
+    .question-content-list__item{
+        padding-left: 1rem;
+    }
+    .question-content-list__item--link::before{
+        left: 1rem;
+    }
+    .modal-container #modal-toggle.active ~ .modal-content, .modal-container #modal-toggle:checked ~ .modal-content{
+        max-width: 100%;
+        width: 80%;
     }
 }

@@ -10,11 +10,13 @@
             display: flex;
             align-items: center;
             &__icon{
+                padding-top: 1rem;
                 width: 2.5rem;
                 height: auto;
                 color: #2b2606;
             }
             .contact-footer-top__icon--phone{
+                padding-top: 1rem;
                 width: 1.5rem;
                 height: auto;
                 color: #2b2606;
