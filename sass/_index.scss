@@ -347,6 +347,7 @@
         width: 25rem;
         border: 1px solid $color-border-service;
         margin: auto;
+        z-index: 1;
       }
       &--name{
         position: absolute;

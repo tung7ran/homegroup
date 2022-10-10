@@ -89,3 +89,17 @@
 .checkbox-menu{
     display: none;
 }
+
+.tab-menu-mobile{
+    border: 1px solid $color-black;
+    border-radius: 0.5rem;
+    width: 90%;
+    &__wrap{
+        &--text{
+            text-align: center;
+            font-weight: 500;
+            font-size: 2rem;
+            color: $color-black;
+        }
+    }
+}

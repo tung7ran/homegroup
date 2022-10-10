@@ -108,6 +108,9 @@
         justify-content: center;
         margin-top: 1rem;
     }
+    .furnitune-refer-image{
+        background-image: none !important;
+    }
 }
 
 @include responsive_tablet{
@@ -157,7 +160,7 @@
     }
     .furnitutre-refer-heading__text2{
         font-size: 2.6rem;
-        margin-bottom: 2.6rem;
+        margin-bottom: -6rem;
     }
     .furnitutre-refer .furnitune-refer-info{
         left: 0rem;
@@ -170,6 +173,12 @@
     }
     .furnitutre-refer .furnitune-refer-info__form--item6-text{
         padding: 1rem 3rem;
+    }
+    .furnitune-refer-image{
+        background-image: none !important;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--text1{
+        margin-top: 0rem;
     }
     .furniture-parameter .furniture-parameter-image{
         height: 78rem;
@@ -216,7 +225,6 @@
             line-height: 4rem;
         }
     }
-    
 }
 
 @include responsive_pclow{

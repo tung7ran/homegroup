@@ -773,6 +773,18 @@ navbar input[type=checkbox],
   display: none;
 }
 
+.tab-menu-mobile {
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  width: 90%;
+}
+.tab-menu-mobile__wrap--text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #000;
+}
+
 @font-face {
   font-family: Roboto;
   src: url("../fonts/Roboto-Bold.ttf");
@@ -1132,6 +1144,7 @@ navbar input[type=checkbox],
   width: 25rem;
   border: 1px solid #f7df37;
   margin: auto;
+  z-index: 1;
 }
 .service-content-describe__text--name {
   position: absolute;
@@ -3046,7 +3059,7 @@ navbar input[type=checkbox],
   .navbar .menu-items {
     padding-top: 5rem;
     background: #fff;
-    height: 100vh;
+    height: 101vh;
     max-width: 100%;
     width: 29rem;
     transform: translate(-150%);
@@ -3074,7 +3087,7 @@ navbar input[type=checkbox],
     transform: rotate(-45deg);
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .header {
     height: 5rem;
   }
@@ -3146,7 +3159,7 @@ navbar input[type=checkbox],
   .navbar .menu-items {
     padding-top: 5rem;
     background: #fff;
-    height: 100vh;
+    height: 101vh;
     max-width: 100%;
     width: 29rem;
     transform: translate(-150%);
@@ -3174,7 +3187,7 @@ navbar input[type=checkbox],
     transform: rotate(-45deg);
   }
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .header .navbar-container {
     display: block;
   }
@@ -3187,10 +3200,21 @@ navbar input[type=checkbox],
   .header-menu-all__list--item-link {
     font-size: 1.4rem;
   }
+  .tab-menu-mobile {
+    display: none;
+  }
 }
 @media (min-width: 992px) and (max-width: 1366px) {
   .header-menu-all {
     line-height: 3rem;
+  }
+  .tab-menu-mobile {
+    display: none;
+  }
+}
+@media (min-width:1366px) {
+  .tab-menu-mobile {
+    display: none;
   }
 }
 @media (max-width: 480px) {
@@ -3335,7 +3359,7 @@ navbar input[type=checkbox],
     line-height: 2rem;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .design-content-title__text {
     font-size: 2.6rem;
   }
@@ -3469,9 +3493,15 @@ navbar input[type=checkbox],
     margin-top: 1.2rem;
   }
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .info h3 {
     padding-top: 0rem;
+  }
+  .service-content-hover {
+    padding: 3rem;
+  }
+  .service-content-hover__title {
+    line-height: 3rem;
   }
   .question-content-list {
     padding: 0 2rem;
@@ -3691,8 +3721,11 @@ navbar input[type=checkbox],
     justify-content: center;
     margin-top: 1rem;
   }
+  .furnitune-refer-image {
+    background-image: none !important;
+  }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .furniture-banner-title {
     min-height: 5rem;
     padding-top: 2rem;
@@ -3733,7 +3766,7 @@ navbar input[type=checkbox],
   }
   .furnitutre-refer-heading__text2 {
     font-size: 2.6rem;
-    margin-bottom: 2.6rem;
+    margin-bottom: -6rem;
   }
   .furnitutre-refer .furnitune-refer-info {
     left: 0rem;
@@ -3746,6 +3779,12 @@ navbar input[type=checkbox],
   }
   .furnitutre-refer .furnitune-refer-info__form--item6-text {
     padding: 1rem 3rem;
+  }
+  .furnitune-refer-image {
+    background-image: none !important;
+  }
+  .furnitutre-refer .furnitune-refer-info__form--text1 {
+    margin-top: 0rem;
   }
   .furniture-parameter .furniture-parameter-image {
     height: 78rem;
@@ -3791,7 +3830,7 @@ navbar input[type=checkbox],
     line-height: 4rem;
   }
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .furnitutre-refer .furnitune-refer-info {
     max-width: 100%;
     width: 100%;
@@ -3951,7 +3990,7 @@ navbar input[type=checkbox],
     line-height: 2rem;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .product-banner-title {
     padding-top: 2rem;
     font-size: 2.6rem;
@@ -4066,7 +4105,7 @@ navbar input[type=checkbox],
     line-height: 2rem;
   }
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .product-construction .product-construction-all {
     margin-top: 1rem;
   }
@@ -4134,7 +4173,7 @@ navbar input[type=checkbox],
     line-height: 2rem;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .project-implementation {
     margin-top: 2rem;
   }
@@ -4153,7 +4192,7 @@ navbar input[type=checkbox],
     margin: 2rem 0;
   }
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .project-implementation-hover__describe--text {
     line-height: 2rem;
   }
@@ -4212,7 +4251,7 @@ navbar input[type=checkbox],
     margin: 1rem 0;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .info-banner-title {
     padding-top: 2rem;
     font-size: 2.6rem;
@@ -4291,7 +4330,7 @@ navbar input[type=checkbox],
     margin: 2rem 0;
   }
 }
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .info-introduce-wrap__left--content {
     margin: 0rem 0rem;
   }
@@ -4377,7 +4416,7 @@ navbar input[type=checkbox],
     text-align: center;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .news-design-heading {
     padding: 0 1rem;
   }
@@ -4387,6 +4426,14 @@ navbar input[type=checkbox],
   }
   .news-design-image {
     height: 36rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .news-design-heading {
+    padding: 0 1rem;
+  }
+  .news-design-heading__text {
+    font-size: 3.8rem;
   }
 }
 @media (max-width: 480px) {
@@ -4437,7 +4484,7 @@ navbar input[type=checkbox],
     text-align: center;
   }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .footer-between-all__list--item-link {
     line-height: 2rem;
   }
