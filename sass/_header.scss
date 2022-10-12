@@ -26,11 +26,12 @@
                     }
                     .fa-chevron-down{
                         font-size: 1.2rem;
+                        transition: 0.5s;
                     }
+
                     .tab-sub{
                         z-index: 999;
                         display: none;
-                        position: absolute;
                         width: 23rem;
                         box-shadow: 0px 0px 10px 0px $color-header-boxshadow;
                         top: 7rem;
@@ -71,9 +72,9 @@
                         }
                     }
                 }
-                .item-card:hover .tab-sub{
-                    display: block;
-                    color: $color-header-hover;
+                .active>.fa-chevron-down{
+                    transform: rotate(180deg);
+                    transition: 0.5s;
                 }
                 .none-right{
                     padding-right: 0rem;
@@ -88,4 +89,18 @@
 
 .checkbox-menu{
     display: none;
+}
+
+.tab-menu-mobile{
+    border: 1px solid $color-black;
+    border-radius: 0.5rem;
+    width: 90%;
+    &__wrap{
+        &--text{
+            text-align: center;
+            font-weight: 500;
+            font-size: 2rem;
+            color: $color-black;
+        }
+    }
 }

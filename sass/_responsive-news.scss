@@ -35,3 +35,16 @@
         height: 36rem;
     }
 }
+
+@include responsive_pclow{
+    .news-design-heading{
+        padding: 0 1rem;
+        &__text{
+            font-size: 3.8rem;
+        }
+    }
+}
+
+@include responsive_pcmedium{
+   
+}

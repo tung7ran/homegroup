@@ -72,7 +72,7 @@
     .navbar .menu-items{
         padding-top: 5rem;
         background: #fff;
-        height: 100vh;
+        height: 101vh;
         max-width: 100%;
         width: 29rem;
         transform: translate(-150%);
@@ -99,9 +99,15 @@
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
     }
+    .header-menu-all__list--item .tab-sub-list__link::after{
+        top: 1rem;
+    }
 }
 
 @include responsive_tablet{
+    .header-menu-all__list--item .tab-sub-list__link::after{
+        top: 1rem;
+    }
     .header{
         height: 5rem;
     }
@@ -174,7 +180,7 @@
     .navbar .menu-items{
         padding-top: 5rem;
         background: #fff;
-        height: 100vh;
+        height: 101vh;
         max-width: 100%;
         width: 29rem;
         transform: translate(-150%);
@@ -212,11 +218,21 @@
             display: none;
         }       
     }
+    .tab-sub{
+        position: absolute;
+    }
     .header-menu-all{
         line-height: 3.2rem;
     }
     .header-menu-all__list--item-link{
         font-size: 1.4rem;
+    }
+    .tab-menu-mobile{
+        display: none;
+    }
+    .item-card:hover .tab-sub{
+        display: block;
+        color: $color-header-hover;
     }
 }
 
@@ -224,5 +240,27 @@
     .header-menu-all{
         line-height: 3rem;
     }
+    .tab-menu-mobile{
+        display: none;
+    }
+    .item-card:hover .tab-sub{
+        display: block;
+        color: $color-header-hover;
+    }
+    .tab-sub{
+        position: absolute;
+    }
 }
     
+@include responsive_pcbig{
+    .tab-menu-mobile{
+        display: none;
+    }
+    .item-card:hover .tab-sub{
+        display: block;
+        color: $color-header-hover;
+    }
+    .tab-sub{
+        position: absolute;
+    }
+}

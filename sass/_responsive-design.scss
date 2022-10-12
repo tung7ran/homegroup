@@ -1,29 +1,4 @@
 @include responsive_mobile{
-    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
-        max-width: 100%;
-        width: 93%;
-        height: 45rem;
-    }
-    .gold-form .gold-seclect-label{
-        line-height: 2.4rem;
-    }
-    .gold-title-text{
-        font-size: 1.6rem;
-        margin: 1.2rem auto;
-        line-height: 2rem;
-    }
-    .gold-form input{
-        height: 3rem;
-        font-size: 1.6rem;
-    }
-    .gold-form .gold-seclect{
-        height: 3rem;
-        font-size: 1.6rem;
-    }
-    .gold-form .gold-form-btn{
-        margin: 2rem auto;
-        line-height: 2rem;
-    }
     .furniture-banner{
         &-title{
             min-height: 5rem;
@@ -55,6 +30,7 @@
         }
     }
     .furnitutre-refer{
+        margin-top: 0rem;
         &-heading{
             display: none;
         }
@@ -63,6 +39,7 @@
     .furnitutre-refer .furnitune-refer-info__form--text1,
     .furnitutre-refer .furnitune-refer-info__form--text2{
         font-size: 2.6rem;
+        margin-top: 1rem;
     }
     .furnitutre-refer .furnitune-refer-info__form--item1-input{
         font-size: 2rem;
@@ -107,6 +84,9 @@
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+    }
+    .furnitune-refer-image{
+        background-image: none !important;
     }
 }
 
@@ -157,7 +137,7 @@
     }
     .furnitutre-refer-heading__text2{
         font-size: 2.6rem;
-        margin-bottom: 2.6rem;
+        margin-bottom: -6rem;
     }
     .furnitutre-refer .furnitune-refer-info{
         left: 0rem;
@@ -171,6 +151,12 @@
     .furnitutre-refer .furnitune-refer-info__form--item6-text{
         padding: 1rem 3rem;
     }
+    .furnitune-refer-image{
+        background-image: none !important;
+    }
+    .furnitutre-refer .furnitune-refer-info__form--text1{
+        margin-top: 0rem;
+    }
     .furniture-parameter .furniture-parameter-image{
         height: 78rem;
     }
@@ -183,31 +169,6 @@
         justify-content: center;
         margin-top: 1rem;
     }
-    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
-        max-width: 100%;
-        width: 90%;
-        height: 50rem;
-    }
-    .gold-form .gold-seclect-label{
-        line-height: 2.4rem;
-    }
-    .gold-title-text{
-        font-size: 1.6rem;
-        margin: 1.2rem auto;
-        line-height: 2rem;
-    }
-    .gold-form input{
-        height: 3rem;
-        font-size: 1.6rem;
-    }
-    .gold-form .gold-seclect{
-        height: 3rem;
-        font-size: 1.6rem;
-    }
-    .gold-form .gold-form-btn{
-        margin: 2rem auto;
-        line-height: 2rem;
-    }
     .furniture-banner{
         &-title{
             min-height: 5rem;
@@ -216,7 +177,6 @@
             line-height: 4rem;
         }
     }
-    
 }
 
 @include responsive_pclow{
@@ -228,10 +188,6 @@
     .footer-bottom-all__title{
         line-height: 2.6rem;
     }
-    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
-        max-width: 100%;
-        width: 80%;
-    }
 }
 
 @include responsive_pcmedium{
@@ -242,10 +198,5 @@
     }
     .furnitutre-refer .furnitune-refer-info__form--item2-Specifically-input{
         padding-left: 5.5rem;
-    }
-
-    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
-        max-width: 100%;
-        width: 80%;
     }
 }

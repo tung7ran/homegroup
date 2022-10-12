@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(".Modern-Slider").slick({
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed:4000,
       speed:700,
       mobileFirst: true,
@@ -13,7 +13,7 @@ $(document).ready(function() {
     })
 
     $(".info-introduce-wrap__right").slick({
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed:3000,
       speed:700,
       mobileFirst: true,
@@ -29,7 +29,7 @@ $(document).ready(function() {
     $('.design-content-slider').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 2000,
       responsive: [
         {
@@ -93,7 +93,7 @@ $(document).ready(function() {
     $('.tab-data').slick({
       slidesToShow: 4,
       slidesToScroll: 2,
-      // autoplay: true,
+      autoplay: true,
       autoplaySpeed: 2000,
     });
      
@@ -113,6 +113,17 @@ $(document).ready(function() {
     })
   })
 
+  if(window.matchMedia("(max-width: 767px)").matches){
+    $(function(){
+      $('.header-menu-all__list--item').click(function(){
+        $(this).toggleClass('active');
+        $('.tab-sub').slideUp();
+        $(this).siblings().removeClass('active');
+        $('.active .tab-sub').stop().slideDown();
+        return false;
+      })
+    })
+  }
 })
 
 const counters = document.querySelectorAll(".counter");
@@ -150,6 +161,13 @@ $(".show").on("click", function(){
   $(".mask").addClass("active");
 });
 
+$(".show-white").on("click", function(){
+  $(".mask").addClass("active");
+});
+
+$(".show-popup").on("click", function(){
+  $(".mask").addClass("active");
+});
 // Function for close the Modal
 
 function closeModal(){
