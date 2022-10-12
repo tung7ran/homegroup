@@ -99,9 +99,15 @@
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
     }
+    .header-menu-all__list--item .tab-sub-list__link::after{
+        top: 1rem;
+    }
 }
 
 @include responsive_tablet{
+    .header-menu-all__list--item .tab-sub-list__link::after{
+        top: 1rem;
+    }
     .header{
         height: 5rem;
     }
@@ -212,6 +218,9 @@
             display: none;
         }       
     }
+    .tab-sub{
+        position: absolute;
+    }
     .header-menu-all{
         line-height: 3.2rem;
     }
@@ -221,7 +230,10 @@
     .tab-menu-mobile{
         display: none;
     }
-    
+    .item-card:hover .tab-sub{
+        display: block;
+        color: $color-header-hover;
+    }
 }
 
 @include responsive_pcmedium{
@@ -231,10 +243,24 @@
     .tab-menu-mobile{
         display: none;
     }
+    .item-card:hover .tab-sub{
+        display: block;
+        color: $color-header-hover;
+    }
+    .tab-sub{
+        position: absolute;
+    }
 }
     
 @include responsive_pcbig{
     .tab-menu-mobile{
         display: none;
+    }
+    .item-card:hover .tab-sub{
+        display: block;
+        color: $color-header-hover;
+    }
+    .tab-sub{
+        position: absolute;
     }
 }

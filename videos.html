@@ -119,30 +119,7 @@
             <div class="videos-banner">
                 <div class="container">
                     <div class="videos-banner-title">VIDEOS</div>
-                    <div class="gold-container">
-                        <input id="gold-toggle" type="checkbox">
-                        <label class="gold-btn" for="gold-toggle"> TƯ VẤN TỪ CHUYÊN GIA </label> 
-                        <label class="gold-backdrop" for="gold-toggle"></label>
-                        <div class="gold-content">
-                          <label class="gold-close" for="gold-toggle">&#x2715;</label>
-                          <label for="" class="gold-title-text">TƯ VẤN LIÊN HỆ BÁO GIÁ</label>
-                            <form action="" class="gold-form">
-                                <input type="text" placeholder="Họ và tên">
-                                <input type="text" placeholder="Email">
-                                <input type="number" placeholder="Số điện thoại">
-                                <select id="cars" class="gold-seclect">
-                                    <option value="">Chủ doanh nghiệp</option>
-                                    <option value="">Cá nhân</option>
-                                    <option value="">Quản lý Marketing</option>
-                                    <option value="">Quản lý IT</option>
-                                    <option value="">Khác</option>
-                                  </select>
-                                  <label for="" class="gold-seclect-label">Homegroup gọi cho bạn khi nào thì phù hợp?</label>
-                                <input type="date" name="time-start" id="">
-                                <input type="submit" class="gold-form-btn" for="gold-toggle" value="Yêu cầu tư vấn"></input>   
-                            </form>
-                        </div>          
-                    </div>
+                    <button class="show-popup" aria-haspopup="true">TƯ VẤN TỪ CHUYÊN GIA</button> 
                 </div>
             </div>
             <div class="videos-heading">
@@ -473,6 +450,26 @@
                 </div>
             </div>
         </div>
+        <div class="mask" role="dialog"></div>
+            <div class="popup" role="alert">
+            <button class="close" role="button">X</button>
+                <label for="" class="popup-title-text">TƯ VẤN LIÊN HỆ BÁO GIÁ</label>
+                <form action="" class="popup-form">
+                    <input type="text" placeholder="Họ và tên">
+                    <input type="text" placeholder="Email">
+                    <input type="number" placeholder="Số điện thoại">
+                        <select id="cars" class="popup-seclect">
+                            <option value="">Chủ doanh nghiệp</option>
+                            <option value="">Cá nhân</option>
+                            <option value="">Quản lý Marketing</option>
+                            <option value="">Quản lý IT</option>
+                            <option value="">Khác</option>
+                        </select>
+                        <label for="" class="popup-seclect-label">Homegroup gọi cho bạn khi nào thì phù hợp?</label>
+                    <input type="date" name="time-start" id="">
+                    <input type="submit" class="popup-form-btn" for="popup-toggle" value="Yêu cầu tư vấn"></input>   
+                </form>
+            </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js" ></script>

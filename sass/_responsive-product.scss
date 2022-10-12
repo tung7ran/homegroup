@@ -60,9 +60,6 @@
             display: none;
         }
     }
-    .gold-container{
-        margin: 3rem auto;
-    }
     .product-gift .product-gift-image{
         height: 72rem;
     }
@@ -115,31 +112,6 @@
                 }
             }
         }
-    }
-    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
-        max-width: 100%;
-        width: 93%;
-        height: 45rem;
-    }
-    .gold-form .gold-seclect-label{
-        line-height: 2.4rem;
-    }
-    .gold-title-text{
-        font-size: 1.6rem;
-        margin: 1.2rem auto;
-        line-height: 2rem;
-    }
-    .gold-form input{
-        height: 3rem;
-        font-size: 1.6rem;
-    }
-    .gold-form .gold-seclect{
-        height: 3rem;
-        font-size: 1.6rem;
-    }
-    .gold-form .gold-form-btn{
-        margin: 2rem auto;
-        line-height: 2rem;
     }
 }
 
@@ -246,31 +218,7 @@
             }
         }
     }
-    .gold-container #gold-toggle.active ~ .gold-content, .gold-container #gold-toggle:checked ~ .gold-content{
-        max-width: 100%;
-        width: 93%;
-        height: 45rem;
-    }
-    .gold-form .gold-seclect-label{
-        line-height: 2.4rem;
-    }
-    .gold-title-text{
-        font-size: 1.6rem;
-        margin: 1.2rem auto;
-        line-height: 2rem;
-    }
-    .gold-form input{
-        height: 3rem;
-        font-size: 1.6rem;
-    }
-    .gold-form .gold-seclect{
-        height: 3rem;
-        font-size: 1.6rem;
-    }
-    .gold-form .gold-form-btn{
-        margin: 2rem auto;
-        line-height: 2rem;
-    }
+
 }
 
 @include responsive_pclow{
